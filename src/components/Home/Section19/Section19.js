@@ -1,6 +1,7 @@
 import React from "react";
 import RectangleWithText from "../../SharableComponents/RectangleWithText/RectangleWithText";
 import bgImg from "../../../images/webp/image26.webp";
+
 const Section19 = () => {
   return (
     <>

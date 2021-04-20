@@ -10,11 +10,11 @@ const DetailsComponentRight = ({ children, img }) => {
           padding: "0",
         }}
       >
-        <img src={img} alt="" style={{ height: "100%", width: "100%" }} />
+        <img src={img} alt="" style={{ height: "100vh", width: "100%" }} />
       </div>
       <div
         className="col-md-8 col-sm-12"
-        style={{ height: window.innerHeight < 600 ? "100%" : "100vh" }}
+        style={{ height: window.innerHeight < 600 ? "100%" : "100%" }}
       >
         <CenterCenter>{children}</CenterCenter>
       </div>

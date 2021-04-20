@@ -10,7 +10,7 @@ const MainCircle = ({children}) => {
       <div
         className="text-center"
         style={{
-          height: "80vh",
+          height: "100vh",
           backgroundImage: `url(${bgCircle})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",

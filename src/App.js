@@ -6,6 +6,7 @@ import Section11 from "./components/Home/Section11/Section11";
 import Section12 from "./components/Home/Section12/Section12";
 import Section13 from "./components/Home/Section13/Section13";
 import Section14 from "./components/Home/Section14/Section14";
+import Section15 from "./components/Home/Section15/Section15";
 import Section7 from "./components/Home/Section7/Section7";
 import Section8 from "./components/Home/Section8/Section8";
 import CenterCenter from "./components/SharableComponents/CenterCenter/CenterCenter";
@@ -69,9 +70,9 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Section5 />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <TextImg />
-      </Suspense>
+      </Suspense> */}
       <MainCircle>
         GENERAL COUNSEL <br /> / PARTNER
       </MainCircle>
@@ -92,6 +93,7 @@ function App() {
       <Section12/>
       <Section13/>
       <Section14/>
+      <Section15/>
     </div>
   );
 }

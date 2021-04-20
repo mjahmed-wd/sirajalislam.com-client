@@ -1,24 +1,18 @@
 import React from "react";
 
-const TitleAndList = ({ title,year, designation, subtitle, list }) => {
+const TitleAndList = ({ title, year, designation, subtitle, list }) => {
   return (
-    <>
+    <section>
       <div className="d-flex justify-content-between">
-        <p className="mini-title">
-          {title}
-        </p>
+        <p className="mini-title">{title}</p>
         <p>{year}</p>
       </div>
       <div className="designation">
         <b>{designation}</b>
       </div>
-      <p className="mini-subtitle">
-        {
-            subtitle
-        }
-      </p>
+      <p className="mini-subtitle">{subtitle}</p>
       <ul>
-        {list.map((li) => (
+        {list?.map((li) => (
           <li>{li.data}</li>
         ))}
         {/* <li>
@@ -69,7 +63,7 @@ const TitleAndList = ({ title,year, designation, subtitle, list }) => {
           Drafted Shariah compliance documentation for a real estate fund.
         </li> */}
       </ul>
-    </>
+    </section>
   );
 };
 

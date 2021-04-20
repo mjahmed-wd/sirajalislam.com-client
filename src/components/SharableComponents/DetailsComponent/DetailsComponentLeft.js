@@ -5,7 +5,8 @@ const DetailsComponentLeft = ({ children,img }) => {
     <div className="row">
       <div
         className="col-md-8 col-sm-12"
-        style={{ height: window.innerHeight < 600 ? "100%" : "100vh" }}
+        // height: window.innerHeight < 600 ? "100%" : "100vh asil test korar lagi change korsi"
+        style={{ height: window.innerHeight < 600 ? "100%" : "100%" }}
       >
         <CenterCenter>
             {
@@ -16,11 +17,13 @@ const DetailsComponentLeft = ({ children,img }) => {
       <div
         className="col-md-4 col-sm-12"
         style={{
-          height: window.innerHeight < 600 ? "100%" : "100vh",
+          height: window.innerHeight < 600 ? "100%" : "100%",
+        // height: window.innerHeight < 600 ? "100%" : "100vh asil test korar lagi change korsi"
           padding: "0",
         }}
       >
-        <img src={img} alt="" style={{ height: "100%", width: "100%" }} />
+        <img src={img} alt="" style={{ height: "100vh", width: "100%" }}
+        />
       </div>
     </div>
   );

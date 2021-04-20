@@ -3,9 +3,13 @@
 }
 .row{
   margin: 0;
+  object-fit: contain;
 }
 .full-bg{
   background-size: cover;
+}
+ul{
+  object-fit: contain;
 }
 .reviewerNameContainer{
   position: relative;

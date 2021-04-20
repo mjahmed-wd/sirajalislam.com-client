@@ -6,6 +6,7 @@ import bgCircle from "../../../images/webp/circle.png";
 const MainCircle = ({children}) => {
   return (
     <CircleCircle bgImg={bgImg}>
+        <div style={{transform: "scale(.9)"}}>
       <div
         className="text-center"
         style={{
@@ -23,6 +24,7 @@ const MainCircle = ({children}) => {
                 }
             </p>
         </div>
+      </div>
       </div>
     </CircleCircle>
   );

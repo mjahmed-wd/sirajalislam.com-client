@@ -79,7 +79,15 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.mini-title{
+  font-size: 1.5rem;
+}
+.designation{
+  margin: 20px 0;
+}
+.mini-subtitle{
+  padding: 0 20px;
+}
 .App-link {
   color: #61dafb;
 }

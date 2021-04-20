@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Suspense } from "react";
 import "./App.css";
 import Section11 from "./components/Home/Section11/Section11";
+import Section12 from "./components/Home/Section12/Section12";
 import Section7 from "./components/Home/Section7/Section7";
 import Section8 from "./components/Home/Section8/Section8";
 import CenterCenter from "./components/SharableComponents/CenterCenter/CenterCenter";
@@ -85,7 +86,8 @@ function App() {
       <MainCircle>
         PROFESSIONAL <br /> OVERVIEW
       </MainCircle>
-      {/* <Section11/> */}
+      <Section11/>
+      <Section12/>
     </div>
   );
 }

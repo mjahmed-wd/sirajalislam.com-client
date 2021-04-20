@@ -10,6 +10,7 @@ import Section15 from "./components/Home/Section15/Section15";
 import Section16 from "./components/Home/Section16/Section16";
 import Section17 from "./components/Home/Section17/Section17";
 import Section18 from "./components/Home/Section18/Section18";
+import Section19 from "./components/Home/Section19/Section19";
 import Section7 from "./components/Home/Section7/Section7";
 import Section8 from "./components/Home/Section8/Section8";
 import CardComponent from "./components/SharableComponents/CardComponent/CardComponent";
@@ -101,6 +102,7 @@ function App() {
       <Section16/>
       <Section17/>
       <Section18/>
+      <Section19/>
     </div>
   );
 }

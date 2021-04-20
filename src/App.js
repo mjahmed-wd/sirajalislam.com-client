@@ -7,8 +7,12 @@ import Section12 from "./components/Home/Section12/Section12";
 import Section13 from "./components/Home/Section13/Section13";
 import Section14 from "./components/Home/Section14/Section14";
 import Section15 from "./components/Home/Section15/Section15";
+import Section16 from "./components/Home/Section16/Section16";
+import Section17 from "./components/Home/Section17/Section17";
+import Section18 from "./components/Home/Section18/Section18";
 import Section7 from "./components/Home/Section7/Section7";
 import Section8 from "./components/Home/Section8/Section8";
+import CardComponent from "./components/SharableComponents/CardComponent/CardComponent";
 import CenterCenter from "./components/SharableComponents/CenterCenter/CenterCenter";
 import MainCircle from "./components/SharableComponents/MainCicle/MainCircle";
 // import Introduction from "./components/Home/Inroduction/Introduction";
@@ -94,6 +98,9 @@ function App() {
       <Section13/>
       <Section14/>
       <Section15/>
+      <Section16/>
+      <Section17/>
+      <Section18/>
     </div>
   );
 }

@@ -18,6 +18,14 @@ import Section23 from "./components/Home/Section23/Section23";
 import Section24 from "./components/Home/Section24/Section24";
 import Section25 from "./components/Home/Section25/Section25";
 import Section26 from "./components/Home/Section26/Section26";
+import Section27 from "./components/Home/Section27/Section27";
+import Section28 from "./components/Home/Section28/Section28";
+import Section29 from "./components/Home/Section29/Section29";
+import Section30 from "./components/Home/Section30/Section30";
+import Section31 from "./components/Home/Section31/Section31";
+import Section32 from "./components/Home/Section32/Section32";
+import Section33 from "./components/Home/Section33/Section33";
+import Section34 from "./components/Home/Section34/Section34";
 import Section7 from "./components/Home/Section7/Section7";
 import Section8 from "./components/Home/Section8/Section8";
 import CardComponent from "./components/SharableComponents/CardComponent/CardComponent";
@@ -117,7 +125,14 @@ function App() {
       <Section24/>
       <Section25/>
       <Section26/>
-      
+      <Section27/>
+      <Section28/>
+      <Section29/>
+      <Section30/>
+      <Section31/>
+      <Section32/>
+      <Section33/>
+      <Section34/>
     </div>
   );
 }

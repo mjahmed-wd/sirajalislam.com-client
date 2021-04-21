@@ -2,7 +2,7 @@ import React from "react";
 import RectangleWithText from "../../SharableComponents/RectangleWithText/RectangleWithText";
 import bgImg from "../../../images/webp/image42.webp";
 
-const Section30 = () => {
+const Section32 = () => {
   return (
     <>
       <RectangleWithText
@@ -14,4 +14,4 @@ const Section30 = () => {
   );
 };
 
-export default Section30;
+export default Section32;

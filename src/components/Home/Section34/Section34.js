@@ -1,7 +1,7 @@
 import React from "react";
 import DetailsComponentLeft from "../../SharableComponents/DetailsComponent/DetailsComponentLeft";
 import img from "../../../images/webp/image52.webp";
-const Section27 = () => {
+const Section34 = () => {
   return (
     <DetailsComponentLeft img={img}>
       <ul>
@@ -27,4 +27,4 @@ const Section27 = () => {
   );
 };
 
-export default Section27;
+export default Section34;

@@ -1,9 +1,10 @@
 import React from "react";
 const DetailsComponentBottom = ({ children, img }) => {
   return (
+    <>
     <div
       style={{
-        height: window.innerWidth < 600 ? "100%" : "100vh",
+        minHeight: window.innerWidth<600?"110%":"100vh",
       }}
     >
       <div
@@ -15,9 +16,15 @@ const DetailsComponentBottom = ({ children, img }) => {
         <div className="align-self-center">
           <img src={img} alt="" style={{ width: "100%" }} />
         </div> */}
-        <div className=" align-self-center">{children}</div>
+        <div className=" align-self-center"> <div className="pt-2 pb-2">
+            {
+                children
+            }
+            </div></div>
       </div>
     </div>
+    {/* <hr/> */}
+    </>
   );
 };
 

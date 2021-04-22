@@ -1,6 +1,6 @@
 import React from "react";
 import DetailsComponentBottom from "../../SharableComponents/DetailsComponent/DetailsComponentBottom";
-import img from "../../../images/webp/top1.png";
+import img from "../../../images/webp/top1.webp";
 import TitleAndList from "../../SharableComponents/TitleAndList/TitleAndList";
 
 const Section14 = () => {

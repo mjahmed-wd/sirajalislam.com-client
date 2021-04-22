@@ -1,12 +1,15 @@
 import React from "react";
 import CardComponent from "../../SharableComponents/CardComponent/CardComponent";
-import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";
-import bgImg from "../../../images/webp/bottomBg.png";
+// import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";
+import bgImg from "../../../images/webp/bottomBg.webp";
 const Section16 = () => {
   return (
-    <CenterCenter bgImg={bgImg}>
+    <div  style={{minHeight:window.innerWidth<600?"100%":"100vh",backgroundImage: `url(${bgImg})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center bottom"}}>
       <div className="container">
-        <div className={window.innerWidth<600?"row mt-5 mb-5":"row"}>
+        <div className="row pt-5 pb-5" style={{minHeight:window.innerWidth<600?"110%":"100vh"}}>
           <CardComponent title={`BUSINESS CONTRIBUTIONS`}>
             <ul>
               <li>
@@ -92,7 +95,7 @@ const Section16 = () => {
           </CardComponent>
         </div>
       </div>
-    </CenterCenter>
+    </div>
   );
 };
 

@@ -24,7 +24,7 @@ const Section31 = () => {
           </p>
         </div>
         <div className="col-md-6 col-sm-12">
-          <img src={laptopImg} alt="" className="w-100" />
+          <img src={laptopImg} alt="" className="w-100 p-2" />
         </div>
       </div>
     </DetailsComponentBottom>

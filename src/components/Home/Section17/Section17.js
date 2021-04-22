@@ -1,6 +1,6 @@
 import React from "react";
 import DetailsComponentRight from "../../SharableComponents/DetailsComponent/DetailsComponentRight";
-import img from "../../../images/webp/education.png";
+import img from "../../../images/webp/education.webp";
 import uniWM from "../../../images/webp/image22.webp";
 import uniHT from "../../../images/webp/image23.webp";
 import uniSRA from "../../../images/webp/image24.webp";

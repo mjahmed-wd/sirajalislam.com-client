@@ -7,11 +7,13 @@ import timeLineImg from '../../../images/webp/image3.webp'
 
 const TimeLine = ({ align }) => {
   return (
-    <div className="timeline-bg" style={{backgroundImage: `url(${timeLineImg})`,backgroundPosition: window.innerWidth < 600 ?"bottom":"left"}}>
-      <div className={window.innerWidth < 600 ? "overlay-white" : ""}>
-        <div className="container d-flex justify-content-end  pt-5 pb-5">
-          <div className="align-self-center">
-            <Timeline className="custom-timeline " align={align}>
+    <div className="row text-center" style={{minHeight: window.innerWidth<600?"50vh":"100vh"}}>
+      <div className="col-md-6 col-sm-12" style={{backgroundImage:`url(${timeLineImg})`,backgroundPosition:"bottom left",backgroundSize:"contain",backgroundRepeat:"no-repeat",minHeight:window.innerWidth<600?"70vh":"100vh"}}>
+        <h2 className="pt-5" >Contents</h2>
+        <Icon icon="calendar" size="5x" />
+      </div>
+      <div className="col-md-6 col-sm-12 mt-5 mb-5" style={{minHeight:"100vh"}}>
+      <Timeline className="custom-timeline" align={align}>
               {/* Colored Timeline item as commented, incase if I need it
           
           <Timeline.Item
@@ -60,9 +62,8 @@ const TimeLine = ({ align }) => {
                 <p>Comments about my service commitment</p>
               </Timeline.Item>
             </Timeline>
-          </div>
-        </div>
       </div>
+
     </div>
   );
 };

@@ -4,7 +4,7 @@ import img from "../../../images/webp/image16.webp";
 const Section8 = () => {
   return (
     <div className="row" >
-      <div className="col-md-9 col-sm-12" style={{ height: "100vh" }}>
+      <div className="col-md-6 col-sm-12" style={{ minHeight: window.innerWidth<600?"110%":"100vh" }}>
         <CenterCenter>
           <b className="text-center p-3">
             Award winning lawyer recognised as one of the only Saudi resident
@@ -12,7 +12,7 @@ const Section8 = () => {
           </b>
 
           <ul className="pt-3 pb-3" style={{ marginLeft: "-15px" }}>
-            <li className="pb-2" style={{ fontSize: "15px" }}>
+            <li className="pb-2">
               Provide consultative advising services to government, sponsors,
               and lenders on complex transport, waste, and water projects,
               including the Riyadh Bus Project, Independent Sewage Treatment
@@ -30,7 +30,7 @@ const Section8 = () => {
           </b>
 
           <ul className="pt-3 pb-3" style={{ marginLeft: "-15px" }}>
-            <li className="pb-2" style={{ fontSize: "15px" }}>
+            <li className="pb-2">
               Advised, drafted and negotiated as sole counsel, a complete set of
               42 Islamic ﬁnance transaction documents for the Government of
               Saudi Arabia.
@@ -45,7 +45,7 @@ const Section8 = () => {
         </CenterCenter>
       </div>
       <div
-        className="col-md-3 col-sm-12"
+        className="col-md-6 col-sm-12"
         style={{ height: "100vh", padding: "0" }}
       >
         <img src={img} alt="" style={{ height: "100%", width: "100%" }} />

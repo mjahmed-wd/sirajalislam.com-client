@@ -1,16 +1,17 @@
 import React from "react";
-import CircleCircle from "../CenterCenter/CenterCenter";
-import bgImg from "../../../images/webp/image14.webp";
-import bgCircle from "../../../images/webp/circle.png";
+import CenterCenter from "../CenterCenter/CenterCenter";
+import bgImg from "../../../images/webp/Section-Breaks-dark.jpg";
+import bgCircle from "../../../images/webp/circle.webp";
 
 const MainCircle = ({children}) => {
   return (
-    <CircleCircle bgImg={bgImg}>
+    
+    <CenterCenter bgImg={bgImg}>
         <div style={{transform: "scale(.9)"}}>
       <div
         className="text-center"
         style={{
-          height: "100vh",
+          height: window.innerWidth<600?"50vh":"100vh",
           backgroundImage: `url(${bgCircle})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
@@ -18,7 +19,7 @@ const MainCircle = ({children}) => {
         }}
       >
         <div className='d-flex align-items-center justify-content-center' style={{height:'100%'}}>
-            <p style={{color:'white',fontSize:'25px',fontWeight:'600'}}>
+            <p style={{color:'white',fontSize: window.innerWidth<600?'1.5rem':'4rem',fontWeight:'800'}}>
                 {
                     children
                 }
@@ -26,7 +27,7 @@ const MainCircle = ({children}) => {
         </div>
       </div>
       </div>
-    </CircleCircle>
+    </CenterCenter>
   );
 };
 

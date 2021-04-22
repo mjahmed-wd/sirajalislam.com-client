@@ -2,23 +2,30 @@ import React from "react";
 import CenterCenter from "../CenterCenter/CenterCenter";
 const DetailsComponentRight = ({ children, img }) => {
   return (
+    <>
     <div className="row">
       <div
-        className="col-md-4 col-sm-12"
+        className="col-md-6 col-sm-12"
         style={{
-          height: window.innerHeight < 600 ? "100%" : "100vh",
+          minHeight: window.innerWidth<600?"50vh":"100vh",
           padding: "0",
         }}
       >
-        <img src={img} alt="" style={{ height: "100vh", width: "100%" }} />
+        <img src={img} alt="" style={{ width: "100%" }} />
       </div>
       <div
-        className="col-md-8 col-sm-12"
-        style={{ height: window.innerHeight < 600 ? "100%" : "100%" }}
+        className="col-md-6 col-sm-12"
+        style={{ minHeight: window.innerWidth<600?"110%":"100vh" }}
       >
-        <CenterCenter>{children}</CenterCenter>
+        <CenterCenter> <div className="pt-2 pb-2">
+            {
+                children
+            }
+            </div></CenterCenter>
       </div>
     </div>
+    {/* <hr/> */}
+    </>
   );
 };
 

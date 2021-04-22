@@ -1,10 +1,29 @@
 import React from "react";
-import DetailsComponentLeft from "../../SharableComponents/DetailsComponent/DetailsComponentLeft";
-import img from "../../../images/webp/image52.webp";
+// import DetailsComponentLeft from "../../SharableComponents/DetailsComponent/DetailsComponentLeft";
+import img from "../../../images/webp/ukFlag.webp";
+import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";
 const Section34 = () => {
-  return (
-    <DetailsComponentLeft img={img}>
-      <ul>
+  return (<>
+  <div className="row d-flex flex-md-row-reverse">
+    <div
+        className="col-md-6 col-sm-12"
+        style={{
+          minHeight: window.innerWidth<600?"50vh":"100vh",
+          padding: "0",
+        }}
+      >
+        <CenterCenter>
+
+        <img src={img} alt="" style={{  width: "100%" }} />
+
+        </CenterCenter>
+      </div>
+      <div
+        className="col-md-6 col-sm-12"
+        style={{ minHeight: window.innerWidth<600?"110%":"100vh" }}
+      >
+        <CenterCenter> <div className="pt-2 pb-2">
+        <ul>
         <li>
           Advised on and worked on the MWDA (http://www.merseysidewda.gov.uk) -
           one of the UK’s largest ever PFI projects in the waste sector as lead
@@ -23,7 +42,10 @@ const Section34 = () => {
         <li>Advised on the Sheffield City Council PFI. </li>
         <li>Advised on the Walsgrave PFI Hospital, Coventry</li>
       </ul>
-    </DetailsComponentLeft>
+            </div></CenterCenter>
+      </div>
+    </div>
+    </>
   );
 };
 

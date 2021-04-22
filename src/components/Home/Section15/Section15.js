@@ -1,7 +1,7 @@
 import React from "react";
 import { Timeline, Icon } from "rsuite";
 import "rsuite/dist/styles/rsuite-default.css";
-import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";
+// import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";
 import img from "../../../images/webp/image20.webp";
 import DetailsComponentLeft from "../../SharableComponents/DetailsComponent/DetailsComponentLeft";
 import TitleAndList from "../../SharableComponents/TitleAndList/TitleAndList";

@@ -1,6 +1,6 @@
 import React from "react";
-import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";
-import img from "../../../images/webp/imageTower.png";
+// import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";
+import img from "../../../images/webp/section11.webp";
 import DetailsComponentRight from "../../SharableComponents/DetailsComponent/DetailsComponentRight";
 import TitleAndList from "../../SharableComponents/TitleAndList/TitleAndList";
 const Section11 = () => {

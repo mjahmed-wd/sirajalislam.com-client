@@ -1,15 +1,20 @@
 @font-face {
-  font-family: Play;
-  src: url(./font/Play-Regular.woff);
+  font-family: Poppins;
+  src: url(./font/Poppins-Regular.woff);
 }
 @font-face {
-  font-family: Play;
-  src: url(./font/Play-Bold.woff);
+  font-family: Poppins;
+  src: url(./font/Poppins-Medium.woff);
   font-weight: 800;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(./font/Poppins-Bold.woff);
+  font-weight: 1000;
 }
 body {
   margin: 0;
-  font-family: 'Play'!important;
+  font-family: 'Poppins'!important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

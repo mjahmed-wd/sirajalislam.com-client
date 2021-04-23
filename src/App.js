@@ -10,6 +10,7 @@ import IslamicBanking from "./IslamicBanking";
 import PublicPrivatePartnership from "./PublicPrivatePartnership";
 import Corporate from "./Corporate";
 import ClientRecommendation from "./ClientRecommendation";
+import "./responsive.css"
 // import Section11 from "./components/Home/Section11/Section11";
 // import Section12 from "./components/Home/Section12/Section12";
 // import Section13 from "./components/Home/Section13/Section13";
@@ -57,6 +58,7 @@ import ClientRecommendation from "./ClientRecommendation";
 // import TextImg from './components/SharableComponents/Text-Img/TextImg';
 
 function App() {
+  
   const Introduction = React.lazy(() =>
     import("./components/Home/Inroduction/Introduction")
   );

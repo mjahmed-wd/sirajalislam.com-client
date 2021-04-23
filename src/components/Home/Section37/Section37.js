@@ -5,8 +5,8 @@ import laptopImg from "../../../images/webp/laptop3.webp";
 const Section37 = () => {
   return (
     <DetailsComponentLeft img={img}>
-      <div className="d-flex justify-content-center">
-        <img src={laptopImg} alt="" className={window.innerWidth<600?"w-100 p-1":"w-50 p-1"} />
+      <div className="text-center">
+        <img src={laptopImg} alt="" className={window.innerWidth<960?"w-100 ":"w-50 "} />
       </div>
       <p>
       <p>

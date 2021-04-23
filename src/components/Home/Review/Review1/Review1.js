@@ -5,8 +5,8 @@ import CircleCircle from "../../../SharableComponents/CenterCenter/CenterCenter"
 const Review1 = ({ reviewTextEn, reviewerEn }) => {
   return (
     <>
-    <CircleCircle bgImg={bgImage}>
-    <div className="overlay-black text-center" style={{ height: "100%" }}>
+    <CircleCircle bgImg={bgImage} overlay="black">
+    <div className=" text-center" style={{ height: "100%" }}>
         <div className="container text-center pt-5 pb-5">
           <p style={{ color: "white", fontSize: "20px" }}>
             <Icon
@@ -24,7 +24,7 @@ const Review1 = ({ reviewTextEn, reviewerEn }) => {
           <div className="reviewerNameContainer d-flex justify-content-center mt-5">
             <div
               className="reviewerName"
-              style={{ width: window.innerWidth < 600 ? "100%" : "50%" }}
+              style={{ width: window.innerWidth < 960 ? "100%" : "50%" }}
             >
               <p>{reviewerEn}</p>
             </div>

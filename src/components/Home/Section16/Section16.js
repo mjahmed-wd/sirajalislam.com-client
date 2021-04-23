@@ -9,7 +9,7 @@ const Section16 = () => {
     backgroundSize: "cover",
     backgroundPosition: "center bottom"}}>
       <div className="container">
-        <div className="row pt-5 pb-5" style={{minHeight:window.innerWidth<600?"110%":"100vh"}}>
+        <div className="row pt-5 pb-5" style={{minHeight:window.innerWidth<720?"110%":"100vh"}}>
           <CardComponent title={`BUSINESS CONTRIBUTIONS`}>
             <ul>
               <li>

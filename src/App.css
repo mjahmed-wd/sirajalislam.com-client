@@ -48,8 +48,8 @@ ul{
 .custom-timeline {
   margin-left: 20px;
 }
-p,li{
-  font-size: 1.1rem;}
+p,b,li{
+  font-size: 1rem;}
 
 .custom-timeline .rs-timeline-item-custom-dot .rs-icon {
   position: absolute;

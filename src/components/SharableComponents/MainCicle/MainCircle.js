@@ -9,9 +9,9 @@ const MainCircle = ({children}) => {
     <CenterCenter bgImg={bgImg}>
         <div style={{transform: "scale(.9)"}}>
       <div
-        className="text-center"
+        className="text-center main-circle"
         style={{
-          height: window.innerWidth<600?"50vh":"100vh",
+          // height: window.innerWidth<600?"50vh":"100vh", replaced with class main-circle
           backgroundImage: `url(${bgCircle})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
@@ -19,7 +19,7 @@ const MainCircle = ({children}) => {
         }}
       >
         <div className='d-flex align-items-center justify-content-center' style={{height:'100%'}}>
-            <p style={{color:'white',fontSize: window.innerWidth<600?'1.5rem':'4rem',fontWeight:'800'}}>
+            <p className="circle-title" style={{color:'white',fontWeight:'1000'}}>
                 {
                     children
                 }

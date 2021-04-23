@@ -1,6 +1,6 @@
 import React from "react";
 // import DetailsComponentLeft from "../../SharableComponents/DetailsComponent/DetailsComponentLeft";
-import img from "../../../images/webp/ukFlag.webp";
+import img from "../../../images/webp/ukFlagCroped.jpg";
 import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";
 const Section34 = () => {
   return (<>
@@ -12,11 +12,11 @@ const Section34 = () => {
           padding: "0",
         }}
       >
-        <CenterCenter>
+        
 
         <img src={img} alt="" style={{  width: "100%" }} />
 
-        </CenterCenter>
+       
       </div>
       <div
         className="col-md-6 col-sm-12"

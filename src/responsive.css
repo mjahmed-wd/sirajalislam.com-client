@@ -1,0 +1,31 @@
+@media only screen and (max-width: 600px) {
+.main-circle{
+    height: 50vh;
+}
+    .circle-title{
+        font-size: 1.6rem;
+    }
+   
+  }
+@media (min-width: 600px) and (max-width: 720px) {
+    .main-circle{
+        height: 100vh;
+    }
+    .circle-title{
+        font-size: 1.5rem;
+    }
+  }
+@media (min-width: 720px) and (max-width: 960px) {
+    .main-circle{
+        height: 100vh;
+    }.circle-title{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width: 961px) {
+    .main-circle{
+        height: 100vh;
+    } .circle-title{
+        font-size: 3rem;
+    }
+  }

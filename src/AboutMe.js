@@ -34,9 +34,9 @@ const MainCircle = React.lazy(() =>
               ABOUT <br /> ME
             </MainCircle>
           </Suspense>
-            <Suspense fallback={<div>Loading...</div>}>
+            {/* <Suspense fallback={<div>Loading...</div>}>
             <TimeLine />
-          </Suspense>
+          </Suspense> */}
           <Suspense fallback={<div>Loading...</div>}>
             <Review1
               reviewTextEn={` I took over from Siraj but shadowed him for a few months before he

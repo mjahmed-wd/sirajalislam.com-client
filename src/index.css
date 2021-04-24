@@ -12,12 +12,32 @@
   src: url(./font/Poppins-Bold.woff);
   font-weight: 1000;
 }
+/* @font-face {
+  font-family: Amiri;
+  src: url(./font/Amiri-Regular.woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Amiri;
+  src: url(./font/Amiri-Bold.woff);
+  font-weight: 800;
+} */
+/* @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap'); */
 body {
+  /* direction: rtl; */
+  /* -webkit-user-select: none;  
+  -moz-user-select: none;     
+  -ms-user-select: none;      
+  user-select: none;         */
   margin: 0;
   font-family: 'Poppins'!important;
+  /* font-family: 'Amiri',sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* body{
+  font-family: 'Amiri';
+} */
 
 code {
   font-family: 'Play', sans-serif;

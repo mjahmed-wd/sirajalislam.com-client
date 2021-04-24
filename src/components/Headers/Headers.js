@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
+import { useLanguage } from "../LanguageProvider/LanguageProvider";
 // import { UserContext } from "../../App";
 // import { handleSignOut } from "../Login/FirebaseRefectored";
 import "./Headers.css";
 
 const Header = () => {
+  const { language, setLanguage } = useLanguage();
 
-  
+  console.log(language);
   let history = useHistory();
   return (
     <>
@@ -26,47 +28,59 @@ const Header = () => {
             <Nav className="ml-auto">
              
 
-              
-                <>
-                  <Nav.Link
-                    onClick={ () => history.push("/about-me")
-                    }
-                  >
+              <NavDropdown className="pr-5 pl-5 text-center"
+                title={language === "en" ? "Sections" : "أقسام"}
+                id="basic-nav-dropdown"
+              >
+                <NavDropdown.Item>
+                  <Nav.Link onClick={() => history.push("/about-me")}>
                     About
                   </Nav.Link>
-                  <Nav.Link
-                    onClick={ () => history.push("/resume")
-                    }
-                  >
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Nav.Link onClick={() => history.push("/resume")}>
                     Resume
                   </Nav.Link>
-                  <Nav.Link
-                    onClick={ () => history.push("/islamic-banking")
-                    }
-                  >
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Nav.Link onClick={() => history.push("/islamic-banking")}>
                     Islamic Banking
                   </Nav.Link>
-                  <Nav.Link
-                    onClick={ () => history.push("/ppp")
-                    }
-                  >
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Nav.Link onClick={() => history.push("/ppp")}>
                     Public Private Partnership
                   </Nav.Link>
-                  <Nav.Link
-                    onClick={ () => history.push("/corporate")
-                    }
-                  >
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Nav.Link onClick={() => history.push("/ppp")}>
+                    Public Private Partnership
+                  </Nav.Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Nav.Link onClick={() => history.push("/corporate")}>
                     Corporate M&A/ Capital Markets
                   </Nav.Link>
-                  <Nav.Link
-                    onClick={ () => history.push("/clientRecommendation")
-                    }
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <h6 className="w-100"
+                    onClick={() => history.push("/clientRecommendation")}
                   >
-                    Client Recommendation
-                  </Nav.Link>
-                  
-                </>
-              
+                    Client Recommendations
+                  </h6>
+                </NavDropdown.Item>
+              </NavDropdown>
+             
+              {language === "en" ? (
+                <button className="pl-3 pr-3" onClick={() => setLanguage("ar")}>
+                  Arabic
+                </button>
+              ) : (
+                <button className="pl-3 pr-3" onClick={() => setLanguage("en")}>
+                  English
+                </button>
+              )}
+             
             </Nav>
           </Navbar.Collapse>
         </Container>

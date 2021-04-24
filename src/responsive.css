@@ -1,31 +1,131 @@
+.table-height {
+  height: 100%;
+}
+.circle-title {
+  line-height: 1.4;
+  font-size: 1.3rem;
+}
+.width50-100 {
+  width: 50%!important;
+}
+.width50-100-v2 {
+  width: 50%!important;
+}
+.hundredPto100vh {
+  min-height: 100vh;
+}
+.fiftyVh-100vh {
+  min-height: 100vh;
+  padding: 0;
+}
+.fiftyVh-100vh-v960{
+   min-height: 50vh; 
+   padding: 0;
+}
+.hundred10p-100vh{
+    min-height: 100vh;
+}
+.hundred10p-100vh-v720{
+    min-height: 100vh;
+}
+.center-100p-100vh{
+    height: 100%;
+}
+.rectangle50vh-100vh{
+  height: 100vh;
+}
+.min50vh-100vh-960{
+  min-height: 50vh;
+}
+.arabic-header{
+  font-size: 1.5rem;
+}
+.hundred10p-100vh-960{
+  min-height: 110%;
+}
+.review1-960{
+  width: 100%;
+}
+.full-bg{
+  background-size: cover;
+  background-position: bottom left;
+}
+.arabic li{
+  text-align: justify;
+}
 @media only screen and (max-width: 600px) {
-.main-circle{
+  .width50-100 {
+    width: 100%!important;
+  }
+  .main-circle {
     height: 50vh;
-}
-    .circle-title{
-        font-size: 1.6rem;
-    }
-   
   }
+  .circle-title {
+    font-size: 1.25rem;
+  }
+  .hundredPto100vh {
+    min-height: 100%;
+  }
+  .fiftyVh-100vh {
+    min-height: 50vh;
+  }
+  .hundred10p-100vh-v720,.hundred10p-100vh{
+    min-height: 110%;
+}
+.rectangle50vh-100vh{
+  height: 100%;
+}
+}
 @media (min-width: 600px) and (max-width: 720px) {
-    .main-circle{
-        height: 100vh;
-    }
-    .circle-title{
-        font-size: 1.5rem;
-    }
+  .main-circle {
+    height: 100vh;
   }
-@media (min-width: 720px) and (max-width: 960px) {
-    .main-circle{
-        height: 100vh;
-    }.circle-title{
-        font-size: 1.5rem;
-    }
+  .circle-title {
+    font-size: 1.3rem;
+  } 
+
+  /* 720 */
+  .hundred10p-100vh-v720{
+    min-height: 110%;
 }
-@media only screen and (min-width: 961px) {
-    .main-circle{
-        height: 100vh;
-    } .circle-title{
-        font-size: 3rem;
-    }
+}
+@media (min-width: 720px) and (max-width: 968px) {
+  .main-circle {
+    height: 100vh;
   }
+  .circle-title {
+    font-size: 2rem;
+  } 
+}
+@media only screen and (min-width: 968px) {
+  .main-circle {
+    height: 100vh;
+  }
+  .circle-title {
+    font-size: 2.5rem;
+  } 
+  .table-height {
+    height: 100%;
+    margin-bottom: 50px;
+  }
+  .fiftyVh-100vh-v960{
+    min-height: 100%; 
+    /* this was changed to fix the height */
+ }
+ .center-100p-100vh{
+    height: 100%;
+}
+.min50vh-100vh-960{
+  min-height: 100vh;
+}
+.arabic-header{
+  font-size: 2rem;
+}
+.hundred10p-100vh-960{
+  min-height: 100vh;
+}
+.review1-960{
+  width: 50%;
+}
+}
+

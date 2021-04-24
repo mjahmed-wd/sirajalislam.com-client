@@ -10,17 +10,32 @@ import Section24 from "./components/Home/Section24/Section24";
 import Section25 from "./components/Home/Section25/Section25";
 import Section26 from "./components/Home/Section26/Section26";
 import Section27 from "./components/Home/Section27/Section27";
+import { useLanguage } from "./components/LanguageProvider/LanguageProvider";
 import MainCircle from "./components/SharableComponents/MainCicle/MainCircle";
 
 const IslamicBanking = () => {
+  const { language } = useLanguage();
   return (
     <div>
       <Header />
       <MainCircle>
-        ISLAMIC BANKING <br />
-        / FINANCING / <br />
-        PROJECT FINANCE
+        {language === "en" ? (
+          <>
+            ISLAMIC BANKING <br />
+            / FINANCING / <br />
+            PROJECT FINANCE
+          </>
+        ) : (
+          <>
+            المصرفية الإسلامية
+            <br />
+            / التمويل /
+            <br />
+            تمويل المشاريع
+          </>
+        )}
       </MainCircle>
+
       {/* <Section18/> */}
       <Section19 />
       <Section20 />

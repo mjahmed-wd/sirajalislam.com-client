@@ -2,16 +2,20 @@ import React from "react";
 import CardComponent from "../../SharableComponents/CardComponent/CardComponent";
 // import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";
 import bgImg from "../../../images/webp/bottomBg.webp";
+import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 const Section16 = () => {
+  const {language}=useLanguage()
   return (
-    <div  style={{minHeight:window.innerWidth<600?"100%":"100vh",backgroundImage: `url(${bgImg})`,
+    <div className="hundredPto100vh" style={{backgroundImage: `url(${bgImg})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center bottom"}}>
       <div className="container">
-        <div className="row pt-5 pb-5" style={{minHeight:window.innerWidth<720?"110%":"100vh"}}>
-          <CardComponent title={`BUSINESS CONTRIBUTIONS`}>
-            <ul>
+        <div className="row pt-5 pb-5 hundred10p-100vh-v720" 
+        // style={{minHeight:window.innerWidth<720?"110%":"100vh"}}
+        >
+          <CardComponent title={language==="en"?`BUSINESS CONTRIBUTIONS`:`مساهمات الأعمال`}>
+            {language==="en"?<><ul>
               <li>
                 Oversaw merger and integration for 70 companies into relevant
                 sector specific businesses.
@@ -35,10 +39,20 @@ const Section16 = () => {
                 initiative with HMRC), London Underground PPP, Sheffield City
                 Council PFI, and Walsgrave PFI Hospital, Coventry
               </li>
-            </ul>
-          </CardComponent>
-          <CardComponent title={`LEGAL CONTRIBUTIONS `}>
+            </ul></>:<>
+            {/* arabic */}
             <ul>
+              <li>أشرف على الاندماج والتكامل لـ 70 شركة في الأعمال ذات الصلة بقطاعات محددة.</li>
+              <li>السيطرة المفترضة على جميع ادارة الممتلكات (القانونية والتشغيلية) ومحفظة الممتلكات المخفضة 60٪.</li>
+              <li>توفير أكثر من 1.3 مليون جنيه إسترليني للشركة نتيجة للتحسينات المبتكرة في السياسة.</li>
+              <li>تقديم تقييمات للمخاطر على حقوق الملكية والمعاملات غير القائمة على الأسهم لمديري الشركات وتقييم أهمية إعادة تمويل مشاريع مبادرة التمويل الشخصي.</li>
+              <li>الإشراف على معاملات التمثيل لإدارة العمل والمعاشات وضمانات العقارات والتحويل الاستراتيجي للقطاع الخاص ومبادرات التمويل الخاص ومترو الأنقاق بلندن ومبادرات التمويل الشخصي في مجلس دينة شيفيلد ومشتشفى والسجريف، وكوفنتي.</li>
+            </ul>
+            </>
+            }
+          </CardComponent>
+          <CardComponent title={language==="en"?`LEGAL CONTRIBUTIONS `:`المساهمات القانونية`}>
+          {language==="en"?<><ul>
               <li>
                 Managed legal activities for 70 companies in relation to
                 corporate governance, risk mitigation, and regulatory compliance
@@ -64,10 +78,20 @@ const Section16 = () => {
                 redistribution; also provided advice on executive, board, and
                 shareholders powers.
               </li>
-            </ul>
-          </CardComponent>
-          <CardComponent title={`BLAKE MORGAN ASSIGNMENT`}>
+            </ul></>:<>
+            {/* arabic */}
             <ul>
+              <li>إدارة الأنشطة القانونية لـ 70 شركة فيما يتعلق بإدارة الشركات، وتخفيف المخاطر، والامتثال التنظيمي لمعايير المملكة المتحدة والاتحاد الأوروبي الخاصة بالمنافسة وحماية البيانات.</li>
+              <li>مراجعة وتقديم المشورة بشأن اتفاقيات مشاريع التمويل الشخصي ووثائق الضمان، واتفاقيات الضمانات واتفاقيات التواصل.</li>
+              <li>الصياغة ، والتفاوض ، وتقديم المشورة بشأن الاتفاقات التجارية المتعلقة بإدارة المرافق ، والاستعانة بمصادر خارجية عامة ، وتطوير البرمجيات ، وتكنولوجيا المعلومات ، والرواتب.</li>
+              <li>تقديم المشورة بشأن مسائل الإعسار ومسؤولية المدير والتعويضات وعملية وضع الشركة في التصفية.</li>
+              <li>الاستشارة في قضايا الأسهم مثل زيادة رأس المال وخفضه وتقسيم وتوحيد الأسهم وإعادة توزيع الأسهم ؛ كما قدم المشورة بشأن السلطات التنفيذية ومجلس الإدارة وسلطات المساهمين.</li>
+            </ul>
+            </>
+            }
+          </CardComponent>
+          <CardComponent title={language==="en"?`BLAKE MORGAN ASSIGNMENT`:`العمل مع بليك مورغان`}>
+          {language==="en"?<><ul>
               <li>
                 While maintaining all regular duties and responsibilities, also
                 served as Trainee Solicitor to Blake Morgan on secondment;
@@ -91,7 +115,17 @@ const Section16 = () => {
                 restrictive covenant in employment contracts and negotiated
                 settlements where appropriate.
               </li>
+            </ul></>:<>
+            {/* arabic */}
+            <ul>
+              <li>مع القيام بجميع الواجبات والمسؤوليات العادية ، عمل أيضًا كمحامي متدرب لبليك مورغان على سبيل الإعارة؛ كما عمل في أقسام الشركات والعقارات والتقاضي خلال هذه الفترة.</li>
+              <li>التعامل مع اتفاقيات الشراكة، وإعداد اتفاقيات البيع والشراء لعمليات الاستحواذ والتصفية ، وتقديم المشورة بشأن المساعدة المالية وإجراءات التعهد باستمرار الشركة وملاءتها، وتنفيذ الأمور التجارية لآي اس اس.</li>
+              <li>عقود الإيجار التجارية المدارة والمتفاوض عليها للمؤجر والمستأجرين ، والتراخيص، ومذكرات مراجعة الإيجار، والتجديدات، والتنازل، والتخلي والتمديد، والاستحواذ / التصرف في الممتلكات ، والإعفاءات.</li>
+              <li>إعداد تفاصيل المطالبة بالديون، والإخلال بالعقود ، والتعهدات المقيدة في عقود العمل والتسويات التفاوضية عند الاقتضاء.</li>
+              
             </ul>
+            </>
+            }
           </CardComponent>
         </div>
       </div>

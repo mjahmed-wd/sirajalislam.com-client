@@ -2,8 +2,10 @@ import React from "react";
 import CenterCenter from "../CenterCenter/CenterCenter";
 import bgImg from "../../../images/webp/Section-Breaks-dark.jpg";
 import bgCircle from "../../../images/webp/circle.webp";
+import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 
 const MainCircle = ({children}) => {
+  const {language}=useLanguage()
   return (
     
     <CenterCenter bgImg={bgImg}>
@@ -18,8 +20,8 @@ const MainCircle = ({children}) => {
           backgroundPosition: "center",
         }}
       >
-        <div className='d-flex align-items-center justify-content-center' style={{height:'100%'}}>
-            <p className="circle-title" style={{color:'white',fontWeight:'1000'}}>
+        <div className='d-flex align-items-center justify-content-center' style={{height:'100%' }}>
+            <p className={`${language==="ar"?"arabic arabic-header":"circle-title"} `} style={{color:'white',fontWeight:'1000'}}>
                 {
                     children
                 }

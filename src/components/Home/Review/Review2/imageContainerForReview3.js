@@ -9,19 +9,15 @@ const ImageContainerForReview3 = () => {
   return (
     <div className="w-100 bg-light">
       <div className="p-3 row text-center ImageContainerForReview2">
-<div className="col-4">
-<img src={img1} alt="" className={window.innerWidth<600?"w-100":"w-50"}/>
-
-</div>
-<div className="col-4">
-<img src={img2} alt=""  className={window.innerWidth<600?"w-100":"w-50"}/>
-
-</div>
-<div className="col-4">
-<img src={img4} alt=""  className={window.innerWidth<600?"w-100":"w-50"}/>
-
-</div>
-
+        <div className="col-4">
+          <img src={img1} alt="" className="width50-100" />
+        </div>
+        <div className="col-4">
+          <img src={img2} alt="" className="width50-100" />
+        </div>
+        <div className="col-4">
+          <img src={img4} alt="" className="width50-100" />
+        </div>
       </div>
     </div>
   );

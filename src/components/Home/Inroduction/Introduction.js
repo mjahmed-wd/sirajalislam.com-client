@@ -12,7 +12,7 @@ const Introduction = () => {
               className="text-center"
             >
               <h2>Personal Profile</h2>
-              <img src={logo} alt="" className={window.innerWidth<600?"w-100":"w-50"} />
+              <img src={logo} alt="" className="width50-100" />
             </div>
           </div>
         </div>

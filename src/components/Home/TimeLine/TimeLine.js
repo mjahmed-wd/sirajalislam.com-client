@@ -1,6 +1,6 @@
 import React from "react";
 import { Timeline, Icon } from "rsuite";
-import "rsuite/dist/styles/rsuite-default.css";
+// import "rsuite/dist/styles/rsuite-default.css";
 import "./TimeLine.css";
 import timeLineImg from '../../../images/webp/image3.webp'
 

@@ -5,17 +5,34 @@ import uniWM from "../../../images/webp/image22.webp";
 import uniHT from "../../../images/webp/image23.webp";
 import uniSRA from "../../../images/webp/image24.webp";
 import uniTLS from "../../../images/webp/image25.webp.gif";
+import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 const Section17 = () => {
+  const { language, setLanguage } = useLanguage();
+
   return (
-    <div>
+    <div  className="educationalCertification">
       <DetailsComponentRight img={img}>
-        <h1 className="text-center">EDUCATION & CREDENTIALS</h1>
+        <h1 className="text-center">
+          {language === "en"
+            ? `EDUCATION & CREDENTIALS`
+            : `المؤهلات الأكاديمية والشهادات`}
+        </h1>
         <div className="row">
           <div className="col-md-6 text-center d-flex justify-content-center align-self-center">
             <div>
-              <b>MA</b>
-              <br />
-              <b>Advanced Legal Practice</b>
+              {language === "en" ? (
+                <>
+                  <b>MA</b>
+                  <br />
+                  <b>Advanced Legal Practice</b>
+                </>
+              ) : (
+                <>
+                  <b>ماجستير</b>
+                  <br />
+                  <b>الممارسة القانونية المتقدمة</b>
+                </>
+              )}
             </div>
           </div>
           <div className="col-md-6 w-100 text-center">
@@ -25,9 +42,19 @@ const Section17 = () => {
         <div className="row">
           <div className="col-md-6 text-center d-flex justify-content-center align-self-center">
             <div>
-              <b>LLB</b>
-              <br />
-              <b>Law Society Qualifying Law Degree</b>
+              {language === "en" ? (
+                <>
+                  <b>LLB</b>
+                  <br />
+                  <b>Law Society Qualifying Law Degree</b>
+                </>
+              ) : (
+                <>
+                  <b>بكالوريوس القانون</b>
+                  <br />
+                  <b>الدرجة المؤهلة للعمل القانوني</b>
+                </>
+              )}
             </div>
           </div>
           <div className="col-md-6 w-100 text-center">
@@ -37,7 +64,13 @@ const Section17 = () => {
         <div className="row">
           <div className="col-md-6 text-center d-flex justify-content-center align-self-center">
             <div>
-              <b>Solicitor of the Senior Court of England & Wales</b>
+              <b>
+                {language === "en"
+                  ? `Solicitor of the Senior Court of England & Wales`
+                  : `محام في المحكمة العليا
+
+يإنجلترا وويلز`}
+              </b>
             </div>
           </div>
           <div className="col-md-6 w-100 text-center">
@@ -47,7 +80,11 @@ const Section17 = () => {
         <div className="row">
           <div className="col-md-6 text-center d-flex justify-content-center align-self-center">
             <div>
-              <b>Solicitor at Law Society of England & Wales</b>
+              <b>
+                {language === "en"
+                  ? `Solicitor at Law Society of England & Wales`
+                  : `محامي في جمعية القانون بإنجلترا وويلز`}
+              </b>
             </div>
           </div>
           <div className="col-md-6 w-100 text-center mt-2">

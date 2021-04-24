@@ -1,7 +1,6 @@
 // import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Suspense } from "react";
-import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Headers/Headers";
 import AboutMe from "./AboutMe";
@@ -11,6 +10,8 @@ import PublicPrivatePartnership from "./PublicPrivatePartnership";
 import Corporate from "./Corporate";
 import ClientRecommendation from "./ClientRecommendation";
 import "./responsive.css"
+import "./App.css";
+import LanguageProvider from "./components/LanguageProvider/LanguageProvider";
 // import Section11 from "./components/Home/Section11/Section11";
 // import Section12 from "./components/Home/Section12/Section12";
 // import Section13 from "./components/Home/Section13/Section13";
@@ -187,7 +188,7 @@ function App() {
   );
 
   // const Section11to41 = React.lazy(() => import("./Section11to41.js"));
-  return (<>
+  return (<LanguageProvider>
   <Router>
     <Switch>
       
@@ -366,7 +367,7 @@ function App() {
 
     </Switch>
   </Router>
-  </>
+  </LanguageProvider>
   );
 }
 

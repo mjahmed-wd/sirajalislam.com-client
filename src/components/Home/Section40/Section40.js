@@ -1,10 +1,12 @@
 import React from "react";
 import DetailsComponentRight from "../../SharableComponents/DetailsComponent/DetailsComponentRight";
 import img from "../../../images/webp/image50.webp";
+import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 const Section40 = () => {
+  const {language}=useLanguage()
   return (
     <DetailsComponentRight img={img}>
-      <ul>
+      {language==="en"?<><ul>
         <li>
           Managed legal activities for 70 companies in relation to corporate
           governance, risk mitigation, and regulatory compliance.
@@ -45,7 +47,16 @@ const Section40 = () => {
           Advised PCCW in relation to its IPO on the Saudi Stock Market,
           especially in relation to liability relating to IPO prospectus.
         </li>
+      </ul></>:<>
+      <ul>
+        <li>تقديم المشورة لصفقة بيع شركة تجارة مواد غذائية ومشروبات إلى شركة قابضة سعودية كبرىتقديم المشورة لصفقة ببيع شركة سعودية لبنك بحريني.</li>
+        <li>قيادة صفقة بيع شركة مقاولات سعودية إلى مجموعة استثمارية قطرية</li>
+        <li>قيادة الفحص النافي للجهالة بشأن اكتساب وإعادة تمويل ISS من قبل جولد مان ساكس في المملكة المتحدة؛ ومراجعة وتقديم جميع الوثائق المالية لمجلس الإدارة.</li>
+        <li>تقديم المشورة وصياغة اتفاقية تعديل خدمات الصرف الصحي بالمنطقة الوسطى بالمملكة العربية السعودية.</li>
+        <li>تقديم المشورة بخصوص بيع شركات مقابل قيمة 40 مليون يورو و 29 مليون يورو مع استكمال العديد من عمليات المبيعات والفحص النافي للجهالة لعمليات الاستحواذ المتعددة.</li>
+        <li>إعداد وإطلاق أكثر من 20 شركة في قطاعات الصناعة المتنوعة.</li>
       </ul>
+      </>}
     </DetailsComponentRight>
   );
 };

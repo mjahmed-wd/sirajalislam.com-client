@@ -1,11 +1,22 @@
 .App {
   text-align: center;
 }
+
 .arabic{
   direction: rtl;
+  line-height: 1.5;
 }
-
-
+.dropdown-menu{
+  min-width: 25vw;
+}
+.arabic.nav_btn{
+  text-align: center!important;
+}
+.nav_btn{
+  white-space: initial!important;
+  /* color: #222222!important;
+  background-color: #EFEFEF!important; */
+}
 .row{
   margin: 0;
   object-fit: contain;
@@ -55,7 +66,7 @@ p,b,li{
   margin-bottom: 5px;
 }
 .arabic li, .arabic b{
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   margin-bottom: 5px;
 }
 
@@ -99,7 +110,8 @@ p,b,li{
 }
 
 .designation{
-  margin: 20px 0;
+  /* margin: 20px 0; */
+  
 }
 .mini-subtitle{
   padding: 0 20px;
@@ -121,7 +133,7 @@ hr{
   font-size: 1.5rem;
 }
 .arabic .oneOneRem,.arabic.oneOneRem{
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 .col-md-6,.col-md-3,.col-md-4,.col-sm-12{
   padding: 0%;

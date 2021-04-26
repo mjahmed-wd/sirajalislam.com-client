@@ -12,13 +12,16 @@ import Section26 from "./components/Home/Section26/Section26";
 import Section27 from "./components/Home/Section27/Section27";
 import { useLanguage } from "./components/LanguageProvider/LanguageProvider";
 import MainCircle from "./components/SharableComponents/MainCicle/MainCircle";
+import islamicBankingEn from "./images/webp/circles/islamicBankingEn.png"
+import islamicBankingAr from "./images/webp/circles/islamicBankingAr.png"
 
 const IslamicBanking = () => {
   const { language } = useLanguage();
   return (
-    <div>
-      <Header />
-      <MainCircle>
+    <div id="islamic-banking">
+      {/* <Header /> */}
+      <MainCircle img={language==="en"?islamicBankingEn:islamicBankingAr}/>
+      {/* <MainCircle>
         {language === "en" ? (
           <>
             ISLAMIC BANKING <br />
@@ -34,7 +37,7 @@ const IslamicBanking = () => {
             تمويل المشاريع
           </>
         )}
-      </MainCircle>
+      </MainCircle> */}
 
       {/* <Section18/> */}
       <Section19 />

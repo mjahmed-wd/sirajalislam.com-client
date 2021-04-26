@@ -2,14 +2,14 @@ import React from "react";
 import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 
 const TitleAndList = ({ title, year, designation, subtitle, list }) => {
-  const {language}=useLanguage()
+  const { language } = useLanguage();
   return (
-    <section className={`${language==="ar"?"arabic":""}`}>
+    <section className={`${language === "ar" ? "arabic" : ""}`}>
       <div className="d-flex justify-content-between">
-        <p className="mini-title oneOneRem">{title}</p>
-        <p className="oneOneRem">{year}</p>
+        <p className="mini-title oneOneRem m-2">{title}</p>
+        <p className="oneOneRem m-2">{year}</p>
       </div>
-      <div className="designation">
+      <div className="oneOneRem mt-2 mb-2">
         <b>{designation}</b>
       </div>
       <p className="mini-subtitle oneOneRem">{subtitle}</p>
@@ -17,7 +17,6 @@ const TitleAndList = ({ title, year, designation, subtitle, list }) => {
         {list?.map((li) => (
           <li key={li.data}>{li.data}</li>
         ))}
-        
       </ul>
     </section>
   );

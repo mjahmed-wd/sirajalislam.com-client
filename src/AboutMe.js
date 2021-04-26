@@ -1,6 +1,10 @@
 import React, { Suspense } from "react";
 import Header from "./components/Headers/Headers";
 import { useLanguage } from "./components/LanguageProvider/LanguageProvider";
+import aboutMeEn from "./images/webp/circles/aboutMeEn.png"
+import aboutMeAr from "./images/webp/circles/aboutMeAr.png"
+import generalCounselEn from "./images/webp/circles/generalCounselEn.png"
+import generalCounselAr from "./images/webp/circles/generalCounselAr.png"
 // import MainCircle from './components/SharableComponents/MainCicle/MainCircle';
 
 const AboutMe = () => {
@@ -29,16 +33,19 @@ const AboutMe = () => {
   const { language } = useLanguage();
 
   return (
-    <div>
-      <Header />
+    <div id="about">
+      {/* <Header /> */}
       {/* SECTION 2-9 */}
       <Suspense fallback={<div>Loading...</div>}>
+       <MainCircle img={language==="en"?aboutMeEn:aboutMeAr}/>
+      </Suspense>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <MainCircle>
           {language === "en" ? `ABOUT` : `عني`}
           <br />
           {language === "en" ? ` ME` : ``}
         </MainCircle>
-      </Suspense>
+      </Suspense> */}
       {/* <Suspense fallback={<div>Loading...</div>}>
             <TimeLine />
           </Suspense> */}
@@ -80,7 +87,8 @@ const AboutMe = () => {
         <TextImg />
         </Suspense> */}
       <Suspense fallback={<div>Loading...</div>}>
-        <MainCircle>
+        <MainCircle img={language==="en"?generalCounselEn:generalCounselAr}/>
+        {/* <MainCircle>
           {language === "en" ? (
             <>
               GENERAL <br /> COUNSEL <br /> / PARTNER
@@ -95,7 +103,7 @@ const AboutMe = () => {
               وشريك
             </>
           )}
-        </MainCircle>
+        </MainCircle> */}
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <Section7 />

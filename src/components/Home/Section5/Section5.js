@@ -1,6 +1,6 @@
 import React from "react";
 import TextImg from "../../SharableComponents/Text-Img/TextImg";
-import bgImg from "../../../images/webp/image16.webp";
+import bgImg from "../../../images/webp/section5.webp";
 import sirajPic from "../../../images/webp/image12.webp";
 import ImageContainerForReview3 from "../Review/Review2/imageContainerForReview3";
 import { useLanguage } from "../../LanguageProvider/LanguageProvider";

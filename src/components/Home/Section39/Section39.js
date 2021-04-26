@@ -1,6 +1,6 @@
 import React from "react";
 import DetailsComponentLeft from "../../SharableComponents/DetailsComponent/DetailsComponentLeft";
-import img from "../../../images/webp/image52.webp";
+import img from "../../../images/webp/section39.webp";
 import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 const Section39 = () => {
   const {language}=useLanguage()

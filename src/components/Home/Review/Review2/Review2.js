@@ -4,7 +4,7 @@ import { Icon } from "rsuite";
 import ImageContainerForReview2 from "./ImageContainerForReview2";
 import { useLanguage } from "../../../LanguageProvider/LanguageProvider";
 const Review2 = () => {
-  const {language,setLanguage}=useLanguage()
+  const {language}=useLanguage()
 
   return (
     <div

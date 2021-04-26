@@ -4,7 +4,7 @@ import bgImg from "../../../images/webp/Section-Breaks-dark.jpg";
 import bgCircle from "../../../images/webp/circle.webp";
 import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 
-const MainCircle = ({children}) => {
+const MainCircle = ({children, img}) => {
   const {language}=useLanguage()
   return (
     
@@ -14,7 +14,7 @@ const MainCircle = ({children}) => {
         className="text-center main-circle"
         style={{
           // height: window.innerWidth<600?"50vh":"100vh", replaced with class main-circle
-          backgroundImage: `url(${bgCircle})`,
+          backgroundImage: `url(${img||bgCircle})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
           backgroundPosition: "center",

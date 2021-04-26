@@ -1,6 +1,6 @@
 import React from "react";
 import DetailsComponentBottom from "../../SharableComponents/DetailsComponent/DetailsComponentBottom";
-import img from "../../../images/webp/image36.webp";
+import img from "../../../images/webp/section31top.webp";
 import laptopImg from "../../../images/webp/Dammam-Waste.webp";
 import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";

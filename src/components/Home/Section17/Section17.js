@@ -4,10 +4,10 @@ import img from "../../../images/webp/education.webp";
 import uniWM from "../../../images/webp/image22.webp";
 import uniHT from "../../../images/webp/image23.webp";
 import uniSRA from "../../../images/webp/image24.webp";
-import uniTLS from "../../../images/webp/image25.webp.gif";
+import uniTLS from "../../../images/webp/image25.webp";
 import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 const Section17 = () => {
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
 
   return (
     <div  className="educationalCertification">

@@ -5,7 +5,7 @@ import TitleAndList from "../../SharableComponents/TitleAndList/TitleAndList";
 import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 
 const Section14 = () => {
-const {language,setLanguage}=useLanguage()
+const {language}=useLanguage()
 
   const title = `CLIFFORD CHANCE, LLP – RIYADH, SAUDI ARABIA`;
   const titleAr = `مكتب كليفورد شانس ال ال بي، الرياض المملكة العربية السعودية`;
@@ -52,19 +52,23 @@ const {language,setLanguage}=useLanguage()
   ]
   return (
     <DetailsComponentBottom img={img}>
-     {language==="en"?<TitleAndList
-        title={title}
-        year={year}
-        designation={designation}
-        subtitle={subtitle}
-        list={list}
-      />:<TitleAndList
-      title={titleAr}
-      year={yearAr}
-      designation={designationAr}
-      subtitle={subtitleAr}
-      list={listAr}
-    />}
+      {language === "en" ? (
+        <TitleAndList
+          title={title}
+          year={year}
+          designation={designation}
+          subtitle={subtitle}
+          list={list}
+        />
+      ) : (
+        <TitleAndList
+          title={titleAr}
+          year={yearAr}
+          designation={designationAr}
+          subtitle={subtitleAr}
+          list={listAr}
+        />
+      )}
     </DetailsComponentBottom>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../../../../images/webp/brand1.webp";
 import img2 from "../../../../images/webp/image7.webp";
 // import img3 from '../../../../images/webp/image8.webp'
-import img4 from "../../../../images/webp/image9.webp";
+import img4 from "../../../../images/webp/image10.webp";
 import "./imageContainerForReview2.css";
 
 const ImageContainerForReview2 = () => {

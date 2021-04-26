@@ -7,13 +7,15 @@ import Section39 from "./components/Home/Section39/Section39";
 import Section40 from "./components/Home/Section40/Section40";
 import { useLanguage } from "./components/LanguageProvider/LanguageProvider";
 import MainCircle from "./components/SharableComponents/MainCicle/MainCircle";
-
+import corporateEn from "./images/webp/circles/corporateEn.png"
+import corporateAr from "./images/webp/circles/corporateAr.png"
 const Corporate = () => {
   const { language } = useLanguage();
   return (
-    <div>
-      <Header />
-      <MainCircle>
+    <div id="corporate">
+      {/* <Header /> */}
+      <MainCircle img={language==="en"?corporateEn:corporateAr}/>
+      {/* <MainCircle>
         {language === "en" ? (
           <>
             CORPORATE <br />
@@ -27,7 +29,7 @@ const Corporate = () => {
             والاستحواذ للشركات <br />/ أسواق رأس المال
           </>
         )}
-      </MainCircle>
+      </MainCircle> */}
       <Section36 />
       <Section37 />
       <Section38 />

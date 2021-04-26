@@ -5,11 +5,11 @@ import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 import DetailsComponentRight from "../../SharableComponents/DetailsComponent/DetailsComponentRight";
 import TitleAndList from "../../SharableComponents/TitleAndList/TitleAndList";
 const Section13 = () => {
-const {language}=useLanguage()
+  const { language } = useLanguage();
 
-    const title = `BAKER BOTTS, LLP
-  – RIYADH, SAUDI ARABIA`
-    const titleAr = `BAKER BOTTS, LLP  الرياض، المملكة العربية السعودية `
+  const title = `BAKER BOTTS, LLP
+  – RIYADH, SAUDI ARABIA`;
+  const titleAr = `BAKER BOTTS, LLP  الرياض، المملكة العربية السعودية `;
   const year = `2009-11`;
   const yearAr = `2009-11`;
   const designation = `Associate
@@ -49,31 +49,45 @@ const {language}=useLanguage()
       Arabia. `,
     },
   ];
- 
-  const listAr=[
-    {data:`هيكلة وتصحيح وثائق شرعية أعدها المستشار القانوني للطرف الآخر.`},
-    {data:`إعادة هيكلة الالتزام المالي لمقاول بناء سعودي رئيس.`},
-    {data:`إدارة إعادة الهيكلة وإعادة التمويل لمشروع البتروكيماويات الرئيسي في المملكة العربية السعودية ، بما في ذلك القروض لأجل، وإعادة التمويل، وتدوير التسهيلات والتسهيلات الاحتياطية بالدولار الأمريكي والريال السعودي.`},
-    {data:`قيادة إعادة الهيكلة وإعادة التمويل المتعلقة بتجاوز تكاليف مشروع شركة بتروكيماويات`},
-    {data:`مراجعة وثائق التمويل / المشروع والآراء القانونية المتعلقة بمشروع الطاقة المستقل لـ PP11 في الرياض.`},
-    {data:`الإشراف على هيكلة وصياغة كامل وثائق مشروع منشأة نزع السلام وفق نظام البناء والتملك والتشغيل BOO/ ونظام البناء والتملك ونقل الملكيةBOT`},
-    {data:`هيكلة خدمات تخصيص الهاتف المحمول لشركة كبرى في المملكة العربية السعودية.`},
-  ]
+
+  const listAr = [
+    { data: `هيكلة وتصحيح وثائق شرعية أعدها المستشار القانوني للطرف الآخر.` },
+    { data: `إعادة هيكلة الالتزام المالي لمقاول بناء سعودي رئيس.` },
+    {
+      data: `إدارة إعادة الهيكلة وإعادة التمويل لمشروع البتروكيماويات الرئيسي في المملكة العربية السعودية ، بما في ذلك القروض لأجل، وإعادة التمويل، وتدوير التسهيلات والتسهيلات الاحتياطية بالدولار الأمريكي والريال السعودي.`,
+    },
+    {
+      data: `قيادة إعادة الهيكلة وإعادة التمويل المتعلقة بتجاوز تكاليف مشروع شركة بتروكيماويات`,
+    },
+    {
+      data: `مراجعة وثائق التمويل / المشروع والآراء القانونية المتعلقة بمشروع الطاقة المستقل لـ PP11 في الرياض.`,
+    },
+    {
+      data: `الإشراف على هيكلة وصياغة كامل وثائق مشروع منشأة نزع السلام وفق نظام البناء والتملك والتشغيل BOO/ ونظام البناء والتملك ونقل الملكيةBOT`,
+    },
+    {
+      data: `هيكلة خدمات تخصيص الهاتف المحمول لشركة كبرى في المملكة العربية السعودية.`,
+    },
+  ];
   return (
     <DetailsComponentRight img={img}>
-     {language==="en"?<TitleAndList
-        title={title}
-        year={year}
-        designation={designation}
-        subtitle={subtitle}
-        list={list}
-      />:<TitleAndList
-      title={titleAr}
-      year={yearAr}
-      designation={designationAr}
-      subtitle={subtitleAr}
-      list={listAr}
-    />}
+      {language === "en" ? (
+        <TitleAndList
+          title={title}
+          year={year}
+          designation={designation}
+          subtitle={subtitle}
+          list={list}
+        />
+      ) : (
+        <TitleAndList
+          title={titleAr}
+          year={yearAr}
+          designation={designationAr}
+          subtitle={subtitleAr}
+          list={listAr}
+        />
+      )}
     </DetailsComponentRight>
   );
 };

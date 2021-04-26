@@ -25,15 +25,15 @@ const Section7 = () => {
           </b>
           <ul className="pt-3 pb-3" style={{ marginLeft: "-15px" }}>
             <li className="pb-2">
-             {language==="en"?` As General Counsel governed the legal activities for 70 companies
-              and spear- headed the due diligence on the £4 billion acquisition
-              and reﬁnance of ISS by Goldman Sachs in the UK.`:"كرئيس الشؤون القانونية، أدار الأنشطة القانونية لعدد 70 شركة وتولى رئاسة العناية الواجبة بشأن الاستحواذ على شركة جولدمان ساكس وإعادة تمويلها بقيمة 4 مليارات جنيه إسترليني في المملكة المتحدة."}
+             {language==="en"?<> As General Counsel <b>governed the legal activities for 70 companies{" "}</b>
+              and spear- headed the due diligence on the <b>£4 billion acquisition
+              and reﬁnance of ISS by Goldman Sachs in the UK{" "}</b>.</>:"كرئيس الشؤون القانونية، أدار الأنشطة القانونية لعدد 70 شركة وتولى رئاسة العناية الواجبة بشأن الاستحواذ على شركة جولدمان ساكس وإعادة تمويلها بقيمة 4 مليارات جنيه إسترليني في المملكة المتحدة."}
             </li>
             <li className="pb-2">
-             {language==="en"?` Advised the Saudi Agriculture and Livestock Investment Company
-              (SALIC), a wholly owned subsidiary of the Public Investment Fund
+             {language==="en"?<> Advised the <b>Saudi Agriculture and Livestock Investment Company{" "}</b> 
+              (SALIC), a wholly owned subsidiary of the <b>Public Investment Fund{" "}</b> 
               (PIF) as part of the Kingdom of Saudi Arabia’s strategic food
-              security program.`:`تقديم المشورة للشركة السعودية للاستثمار الزراعي و الإنتاج الحيواني (سالك)، وهي شركة تابعة مملوكة بالكامل لصندوق الاستثمارات العامة كجزء من برنامج الأمن الغذائي الاستراتيجي للمملكة العربية السعودية.`}
+              security program.</>:`تقديم المشورة للشركة السعودية للاستثمار الزراعي و الإنتاج الحيواني (سالك)، وهي شركة تابعة مملوكة بالكامل لصندوق الاستثمارات العامة كجزء من برنامج الأمن الغذائي الاستراتيجي للمملكة العربية السعودية.`}
             </li>
           </ul>
     </DetailsComponentRight>

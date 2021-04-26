@@ -57,7 +57,10 @@ ul{
   background-size: contain;
   color: rgb(43, 41, 41);
 }
-
+.a_remove_style,.a_remove_style:hover{
+  color: #222222;
+  text-decoration: none;
+}
 .custom-timeline {
   margin-left: 20px;
 }

@@ -23,6 +23,9 @@
   font-weight: 800;
 } */
 /* @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap'); */
+html{
+  /* scroll-behavior: smooth ; */
+}
 body {
   /* direction: rtl; */
   -webkit-user-select: none;  

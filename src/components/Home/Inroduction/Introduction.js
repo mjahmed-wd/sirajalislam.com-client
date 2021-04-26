@@ -4,7 +4,8 @@ import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 import MainCircle from "../../SharableComponents/MainCicle/MainCircle";
 import "./Introduction.css";
 import bgImg from "../../../images/webp/image1.webp"
-import logoWithText from "../../../images/introwithtext.png" 
+import logoWithText from "../../../images/webp/introwithtext.png" 
+import logoWithTextAr from "../../../images/webp/introwithtextAr.png" 
 import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";
 
 const Introduction = () => {
@@ -34,7 +35,7 @@ const Introduction = () => {
     // solution 2 with 2 img
     <div
       // className="center-100p-100vh"
-      style={{ height:"90vh", backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }}
+      style={{ height:"100vh", backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }}
     >
       <div
         className="row justify-content-center overlay-black"
@@ -51,7 +52,7 @@ const Introduction = () => {
         className="text-center main-circle"
         style={{
           // height: window.innerWidth<600?"50vh":"100vh", replaced with class main-circle
-          backgroundImage: `url(${logoWithText})`,
+          backgroundImage: `url(${language==="en"?logoWithText:logoWithTextAr})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
           backgroundPosition: "center",

@@ -12,6 +12,8 @@ import ClientRecommendation from "./ClientRecommendation";
 import "./responsive.css";
 import "./App.css";
 import LanguageProvider from "./components/LanguageProvider/LanguageProvider";
+import HeaderDrawer from "./components/Headers/HeaderDrawer";
+import NavigateToTop from "./components/NavigateToTop/NavigateToTop";
 
 function App() {
   const Introduction = React.lazy(() =>
@@ -23,7 +25,9 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            <Header />
+            {/* <Header /> */}
+            <HeaderDrawer/>
+            {/* <NavigateToTop/> */}
             <Suspense fallback={<div>Loading...</div>}>
               <Introduction />
             </Suspense>

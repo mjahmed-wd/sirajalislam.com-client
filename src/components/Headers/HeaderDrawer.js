@@ -10,23 +10,24 @@ import Drawer from "@material-ui/core/Drawer";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import List from "@material-ui/core/List";
+// import List from "@material-ui/core/List";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
+// import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
+// import ListItem from "@material-ui/core/ListItem";
+// import ListItemIcon from "@material-ui/core/ListItemIcon";
+// import ListItemText from "@material-ui/core/ListItemText";
+// import InboxIcon from "@material-ui/icons/MoveToInbox";
+// import MailIcon from "@material-ui/icons/Mail";
 import { useLanguage } from "../LanguageProvider/LanguageProvider";
 import MenuItems from "./MenuItems";
 import engUk from "../../images/webp/engUkLanguage.png";
 import arKsa from "../../images/webp/arKsaLanguage.png";
-import { Link } from "@material-ui/core";
+import Ticker from "../Ticker/Ticker";
+// import { Link } from "@material-ui/core";
 
 const drawerWidth = 320;
 
@@ -62,6 +63,7 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
+    height: "auto",
   },
   drawerHeader: {
     display: "flex",
@@ -73,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    padding: theme.spacing(2),
     transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -89,15 +91,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function HeaderDrawer() {
+export default function HeaderDrawer({ children }) {
   const preventDefault = (event) => event.preventDefault();
   const { language, setLanguage } = useLanguage();
   const sectionsEn = [
     { title: "About", id: "about" },
     { title: "Resume", id: "resume" },
-    { title: "Islamic Banking / Finance Project", id: "islamic-banking" },
+    { title: "Corporate M&A / Capital Markets", id: "corporate" },
     { title: "Public Private Partnership-PPP", id: "ppp" },
-    { title: "Corporate M&A Capital Markets", id: "corporate" },
+    { title: "Islamic Banking / Finance Project", id: "islamic-banking" },
     { title: "Client Recommendation", id: "recommendations" },
   ];
   const sectionsAr = [
@@ -108,11 +110,10 @@ export default function HeaderDrawer() {
       id: "resume",
     },
     {
-      title: `المصرفية الإسلامية
-    / التمويل /
-    تمويل المشاريع`,
-      id: "islamic-banking",
+      title: "عمليات الدمج والاستحواذ للشركات / أسواق رأس المال",
+      id: "corporate",
     },
+
     {
       title: `الشراكة
     بين القطاعين
@@ -120,8 +121,10 @@ export default function HeaderDrawer() {
       id: "ppp",
     },
     {
-      title: "عمليات الدمج والاستحواذ للشركات / أسواق رأس المال",
-      id: "corporate",
+      title: `المصرفية الإسلامية
+    / التمويل /
+    تمويل المشاريع`,
+      id: "islamic-banking",
     },
     { title: `توصية العملاء`, id: "recommendations" },
   ];
@@ -166,9 +169,9 @@ export default function HeaderDrawer() {
         >
           <Toolbar>
             <Typography variant="h6" noWrap className={classes.title}>
-            <a href="#" style={{color:"black",textDecoration:"none"}}>
-            Siraj Al Islam
-  </a> 
+              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+                SIRAJ AL ISLAM
+              </a>
             </Typography>
             <IconButton
               color="inherit"
@@ -177,11 +180,39 @@ export default function HeaderDrawer() {
               onClick={handleDrawerOpen}
               className={clsx(open && classes.hide)}
             >
-              <MenuIcon />
+              {/* <MenuIcon /> */}
+              <>
+                <div className="d-flex justify-content-around w-100 p-0 m-0">
+                  <div
+                    className="ml-2 mr-2"
+                    onClick={() => setLanguage("en")}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <img src={engUk} style={{ width: "50px" }} alt="" />
+                  </div>
+                  <div
+                    className="ml-2 mr-2"
+                    onClick={() => setLanguage("ar")}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <img src={arKsa} style={{ width: "50px" }} alt="" />
+                  </div>
+                </div>
+              </>
             </IconButton>
           </Toolbar>
         </AppBar>
-
+        <main
+          className={clsx(classes.content, {
+            [classes.contentShift]: open,
+          })}
+        >
+          <div className={classes.drawerHeader} />
+          <div style={{ position: "relative" }}>
+            <Ticker />
+          </div>
+          {children}
+        </main>
         <Drawer
           className={classes.drawer}
           variant="persistent"
@@ -200,13 +231,17 @@ export default function HeaderDrawer() {
               )}
             </IconButton>
             <div className="d-flex justify-content-around w-100 pt-3">
-              <div onClick={() => setLanguage("en")} style={{cursor:"pointer"}}>
+              <div
+                onClick={() => setLanguage("en")}
+                style={{ cursor: "pointer" }}
+              >
                 <img src={engUk} style={{ width: "50px" }} alt="" />
-                <p>English</p>
               </div>
-              <div onClick={() => setLanguage("ar")} style={{cursor:"pointer"}}>
+              <div
+                onClick={() => setLanguage("ar")}
+                style={{ cursor: "pointer" }}
+              >
                 <img src={arKsa} style={{ width: "50px" }} alt="" />
-                <p>عربى</p>
               </div>
             </div>
           </div>
@@ -228,7 +263,7 @@ export default function HeaderDrawer() {
             </ListItem>
           </List> */}
 
-          <Divider className="mt-3" />
+          <Divider className="mt-2" />
 
           {language === "en" ? (
             <>
@@ -237,11 +272,6 @@ export default function HeaderDrawer() {
                 handleDrawerClose={handleDrawerClose}
                 language="en"
               />
-              <MenuItems
-                sections={sectionsAr}
-                handleDrawerClose={handleDrawerClose}
-                language="ar"
-              />
             </>
           ) : (
             <>
@@ -249,11 +279,6 @@ export default function HeaderDrawer() {
                 sections={sectionsAr}
                 handleDrawerClose={handleDrawerClose}
                 language="ar"
-              />
-              <MenuItems
-                sections={sectionsEn}
-                handleDrawerClose={handleDrawerClose}
-                language="en"
               />
             </>
           )}

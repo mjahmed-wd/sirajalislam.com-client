@@ -1,5 +1,4 @@
 import React, { Suspense } from "react";
-import Header from "./components/Headers/Headers";
 import { useLanguage } from "./components/LanguageProvider/LanguageProvider";
 import aboutMeEn from "./images/webp/circles/aboutMeEn.png"
 import aboutMeAr from "./images/webp/circles/aboutMeAr.png"

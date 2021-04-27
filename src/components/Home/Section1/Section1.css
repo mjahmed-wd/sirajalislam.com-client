@@ -1,0 +1,9 @@
+
+.intro h1{
+    object-fit: contain;
+    color: #979797;
+    background-image: linear-gradient(to bottom, #faf9f9, #e0dede, #c7c4c4, #aeabaa, #969291);
+    text-shadow: 5px 5px 20px rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}

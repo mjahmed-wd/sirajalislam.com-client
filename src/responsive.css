@@ -50,15 +50,24 @@
   background-size: cover;
   background-position: bottom left;
 }
+.lg_75{
+  width: 75%;
+}
 .arabic li{
   text-align: justify;
 }
 .responsiveScale{
   transform: scale(.7);
 }
+.responsiveLogo{
+  transform: scale(.8);
+}
 .nav_margin{
   margin: 5px 15px;
   padding: auto;
+}
+.main-logo {
+  min-height: 50vh;
 }
 @media only screen and (max-width: 600px) {
   .width50-100 {
@@ -89,6 +98,9 @@
 .nav_margin{
   margin: 5px 15px;
   padding: 10px;
+}
+.lg_75{
+  width: 100%;
 }
 }
 @media (min-width: 600px) and (max-width: 720px) {

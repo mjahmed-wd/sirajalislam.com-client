@@ -5,10 +5,10 @@ import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 import DetailsComponentRight from "../../SharableComponents/DetailsComponent/DetailsComponentRight";
 import TitleAndList from "../../SharableComponents/TitleAndList/TitleAndList";
 const Section11 = () => {
-  const {language,setLanguage}=useLanguage()
+  const { language, setLanguage } = useLanguage();
 
   const title = `ONE 2 ONE LEGAL, LLP – RIYADH, SAUDI ARABIA`;
-  const titleAr= `لشركة  ون تو ون للمحاماة ال ال بي- الرياض، المملكة العربية السعودية`
+  const titleAr = `لشركة  ون تو ون للمحاماة ال ال بي- الرياض، المملكة العربية السعودية`;
   const year = `2013-Present`;
   const yearAr = `2013 – حتى الوقت الحاضر`;
   const designation = `Managing Partner`;
@@ -31,33 +31,55 @@ const Section11 = () => {
     {
       data: `Leads and manages multi-jurisdictional litigation involving complex legal and regulatory issues`,
     },
-    
   ];
-  const listAr=[
-    {data: `يقود ويدير سراج عمل مجموعة من المحامين السعوديين ، لضمان تلبية طلبات العملاء.`},
-    {data: `يقدم المشورة للحكومة والجهات الراعية والمقرضين بشأن مشاريع النقل المعقدة والنفايات والمياه (مشروع بصات الرياض، ومشروع معالجة مياه الصرف الصحي المستقل بالدمام وجدة).`},
-    {data: `يقود بانتظام عمليات الاندماج والشراء وصناديق الاستثمار المعقدة ، التي تشمل هيكلة وصياغة والتفاوض بشأن شراء الأسهم واتفاقيات المساهمين ونشرات الإصدار وجميع الوثائق الأخرى ذات الصلة.`},
-    {data: `يؤسس ويدير بشكل روتيني اتفاقيات المشاريع المشتركة عبر الحدود وكذلك اتفاقيات الامتياز والوكالة والتوزيع.`},
-    {data: `يدور عمليات التقاضي متعدد الاختصاصات القضائية التي تنطوي على قضايا قانونية وتنظيمية معقدة.`},
-    
-  ]
-  
+  const listAr = [
+    {
+      data: `يقود ويدير سراج عمل مجموعة من المحامين السعوديين ، لضمان تلبية طلبات العملاء.`,
+    },
+    {
+      data: `يقدم المشورة للحكومة والجهات الراعية والمقرضين بشأن مشاريع النقل المعقدة والنفايات والمياه (مشروع بصات الرياض، ومشروع معالجة مياه الصرف الصحي المستقل بالدمام وجدة).`,
+    },
+    {
+      data: `يقود بانتظام عمليات الاندماج والشراء وصناديق الاستثمار المعقدة ، التي تشمل هيكلة وصياغة والتفاوض بشأن شراء الأسهم واتفاقيات المساهمين ونشرات الإصدار وجميع الوثائق الأخرى ذات الصلة.`,
+    },
+    {
+      data: `يؤسس ويدير بشكل روتيني اتفاقيات المشاريع المشتركة عبر الحدود وكذلك اتفاقيات الامتياز والوكالة والتوزيع.`,
+    },
+    {
+      data: `يدور عمليات التقاضي متعدد الاختصاصات القضائية التي تنطوي على قضايا قانونية وتنظيمية معقدة.`,
+    },
+  ];
 
   return (
     <DetailsComponentRight img={img}>
-      {language==="en"?<TitleAndList
-        title={title}
-        year={year}
-        designation={designation}
-        subtitle={subtitle}
-        list={list}
-      />:<TitleAndList
-      title={titleAr}
-      year={yearAr}
-      designation={designationAr}
-      subtitle={subtitleAr}
-      list={listAr}
-    />}
+      {language === "en" ? (
+        <TitleAndList
+          title={title}
+          year={year}
+          designation={designation}
+          subtitle={subtitle}
+          list={list}
+        />
+      ) : (
+        <TitleAndList
+          title={titleAr}
+          year={yearAr}
+          designation={designationAr}
+          subtitle={subtitleAr}
+          list={listAr}
+        />
+      )}
+     {language==="en"? <div className="text-center pt-3">
+        <b>*****Awarded Best Lawyer in Saudi Arabia *****</b>
+        <br/>
+        <b>*****Awarded Best Boutique Law Firm in Saudi Arabia*****</b>
+      </div>: <div className="text-center pt-3">
+        <b>        ******* حائز سراج على جائزة أفضل محام في المملكة العربية السعودية *******
+</b>
+        <br/>
+        <b>******* حازت شركة ون تو ون للمحاماة على جائزة أفضل مكتب محاماة في المملكة العربية السعودية *******
+</b>
+      </div>}
     </DetailsComponentRight>
   );
 };

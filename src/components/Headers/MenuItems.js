@@ -29,7 +29,6 @@ const MenuItems = ({ sections, handleDrawerClose, language }) => {
           </a>
         ))}
       </List>
-      <Divider />
     </>
   );
 };

@@ -18,10 +18,11 @@ const RectangleWithText = ({ topText, title, bgImg }) => {
             className={`${language==="ar"?"arabic":""} mini-title p-3`}
             style={{ border: "5px solid rgb(209, 209, 209)" }}
           >
-            <p style={{fontSize:"1.5rem"}}>{topText}</p>
-            <p style={{fontSize:"1.5rem"}}>
+            <b style={{fontSize:"1.5rem"}}>{topText}</b>
+            {topText?<br/>:""}
+            <b style={{fontSize:"1.5rem"}}>
               {title}
-            </p>
+            </b>
           </div>
         </div>
       </div>

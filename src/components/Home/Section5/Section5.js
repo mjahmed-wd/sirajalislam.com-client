@@ -19,14 +19,16 @@ const Section5 = () => {
             className="w-75"
             style={{ border: "10px solid #999999", borderRadius: "50%" }}
           />
-          <p style={{ fontSize: "25px" }}> {language==="en"?`Siraj Al Islam`:`سراج الإسلام`}</p>
+          <b style={{ fontSize: "25px" ,display:"block"}}> {language==="en"?`Siraj Al Islam`:`سراج الإسلام`}</b>
           <p style={{ fontSize: "20px" }}>
             {language==="en"?`Managing Partner, One 2 One Legal LLP`:`المدير الشريك`}
           </p>
           <p  style={{direction:"ltr"}}>{language==="en"?`Tel:`:`الهاتف:`} <b>+966595528968</b></p>
           <p>siraj@one2onelegal.com</p>
-          <p>Awarded best lawyer in Saudi Arabia</p>
-          <p>Awarded best boutique law firm in Saudi Arabia</p>
+          <p>{language==="en"?`Awarded best lawyer in Saudi Arabia`:`حائز على جائزة أفضل محام في المملكة العربية السعودية
+`}</p>
+          <p>{language==="en"?`Awarded best boutique law firm in Saudi Arabia`:`حصل على جائزة أفضل مكتب محاماة في المملكة العربية السعودية
+`}</p>
         </div>
       </DetailsComponentLeft>
       <ImageContainerForReview3 />

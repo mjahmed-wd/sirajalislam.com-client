@@ -35,10 +35,10 @@ const Introduction = () => {
     // solution 2 with 2 img
     <div
       // className="center-100p-100vh"
-      style={{ height:"100vh", backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }}
+      style={{ height:"100vh", backgroundSize: "cover" }}
     >
       <div
-        className="row justify-content-center overlay-black"
+        className="row justify-content-center"
         style={{ width: "100%", height: "100%" }}
       >
         <div className="col-12 align-self-center">
@@ -49,7 +49,7 @@ const Introduction = () => {
           // style={{transform: "scale(1)"}}
           >
       <div
-        className="text-center main-circle"
+        className="text-center main-circle shadow p-3 mb-5 bg-white rounded"
         style={{
           // height: window.innerWidth<600?"50vh":"100vh", replaced with class main-circle
           backgroundImage: `url(${language==="en"?logoWithText:logoWithTextAr})`,

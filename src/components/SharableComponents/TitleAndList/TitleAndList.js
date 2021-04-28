@@ -13,8 +13,7 @@ const TitleAndList = ({ title, year, designation, subtitle, list }) => {
         <b>{designation}</b>
       </div>
       <div className="mt-3 mb-3">
-      {/* <i className="mini-subtitle oneOneRem">{subtitle}</i> */}
-      {language==="en"?<p className="mini-subtitle oneOneRem">{subtitle}</p>:<p className="mini-subtitle oneOneRem">{subtitle}</p>}
+        <p className="mini-subtitle oneOneRem text-justify">{subtitle}</p>
       </div>
       <ul>
         {list?.map((li) => (

@@ -9,24 +9,6 @@ import TitleAndList from "../../SharableComponents/TitleAndList/TitleAndList";
 
 const Section15 = ({ align }) => {
   const {language}=useLanguage()
-  //   const title = ``;
-  //   const year = ``;
-  //   const designation = ``;
-  //   const subtitle = ``;
-  //   const list = [
-  //     {
-  //       data: ``,
-  //     },
-  //   ];
-  //   const data = [
-  //     {
-  //       title: ``,
-  //       year: ``,
-  //       designation: ``,
-  //       subtitle: ``,
-  //       list: [{ data: `` }],
-  //     },
-  //   ];
 
   return (
     <div className="mt-5">

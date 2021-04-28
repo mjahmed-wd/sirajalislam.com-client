@@ -10,7 +10,7 @@ import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";
 const Section1 = () => {
   const { language } = useLanguage();
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="d-flex flex-column justify-content-around" style={{minHeight:"60vh"}}>
       <div className="shadow-lg mb-3 intro bg-white rounded text-center">
       {language === "en" ? (

@@ -54,6 +54,27 @@ ul{
   transition: box-shadow 3000ms cubic-bezier(1, 1, 1, 1) 300ms!important;
   background-color: #fff;
 }
+.carousel-item {
+
+  transition: transform 2s ease-in-out;
+}
+.carousel-indicators{
+display: none!important;
+}
+.carousel-control-next{
+  display: none!important;
+}
+.carousel-control-prev{
+  display: none!important;
+}
+.ticker{
+  position: -webkit-sticky; /* Safari */
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  top: 50px;
+}
 /* from timeline */
 .timeline-bg{
   /* background-image: url("../../../images/webp/image3.webp")!important; */

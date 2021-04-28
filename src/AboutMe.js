@@ -4,6 +4,9 @@ import aboutMeEn from "./images/webp/circles/aboutMeEn.png"
 import aboutMeAr from "./images/webp/circles/aboutMeAr.png"
 import generalCounselEn from "./images/webp/circles/generalCounselEn.png"
 import generalCounselAr from "./images/webp/circles/generalCounselAr.png"
+import section3bg from "./images/webp/section3bg.webp"
+import section4bg from "./images/webp/section4bg.webp"
+import section9bg from "./images/webp/section9bg.webp"
 // import MainCircle from './components/SharableComponents/MainCicle/MainCircle';
 
 const AboutMe = () => {
@@ -49,7 +52,7 @@ const AboutMe = () => {
             <TimeLine />
           </Suspense> */}
       <Suspense fallback={<div>Loading...</div>}>
-        <Review1
+        <Review1 bgImg={section3bg}
           reviewTextEn={
             language === "en"
               ? ` I took over from Siraj but shadowed him for a few months before he
@@ -77,7 +80,7 @@ const AboutMe = () => {
         />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        <Review2 />
+        <Review2 bgImg={section4bg}/>
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <Section5 />
@@ -111,7 +114,7 @@ const AboutMe = () => {
         <Section8 />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        <Review1
+        <Review1 bgImg={section9bg}
           reviewTextEn={
             language === "en"
               ? `I have been involved in several transactions where Siraj was advising the other side, and each time I have welcomed his courtesy and professionalism and his willingness to give due consideration to any comments and propose practical solutions for ensuring that the transaction proceeded smoothly to a successful conclusion.

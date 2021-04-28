@@ -17,15 +17,12 @@ import IconButton from "@material-ui/core/IconButton";
 // import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-// import ListItem from "@material-ui/core/ListItem";
-// import ListItemIcon from "@material-ui/core/ListItemIcon";
-// import ListItemText from "@material-ui/core/ListItemText";
-// import InboxIcon from "@material-ui/icons/MoveToInbox";
-// import MailIcon from "@material-ui/icons/Mail";
 import { useLanguage } from "../LanguageProvider/LanguageProvider";
 import MenuItems from "./MenuItems";
 import engUk from "../../images/webp/engUkLanguage.png";
 import arKsa from "../../images/webp/arKsaLanguage.png";
+import linkedInLogo from "../../images/linkedIn.png";
+import twitterLogo from "../../images/twitter.png";
 import Ticker from "../Ticker/Ticker";
 // import { Link } from "@material-ui/core";
 
@@ -149,14 +146,6 @@ export default function HeaderDrawer({ children }) {
       },
     },
   });
-  //   const boldTheme = createMuiTheme({
-  //     typography: {
-  //       fontSize: 15,
-  //     },
-  //     body1: {
-  //         fontWeight: 800,
-  //       },
-  //   });
   return (
     <ThemeProvider theme={theme}>
       <div className={classes.root}>
@@ -182,6 +171,7 @@ export default function HeaderDrawer({ children }) {
             >
               {/* <MenuIcon /> */}
               <>
+                {/* chane language and navigation */}
                 <div className="d-flex justify-content-around w-100 p-0 m-0">
                   <div
                     className="ml-2 mr-2"
@@ -230,6 +220,8 @@ export default function HeaderDrawer({ children }) {
                 <ChevronRightIcon />
               )}
             </IconButton>
+
+            {/* navigation */}
             <div className="d-flex justify-content-around w-100 pt-3">
               <div
                 onClick={() => setLanguage("en")}
@@ -246,24 +238,19 @@ export default function HeaderDrawer({ children }) {
             </div>
           </div>
 
-          {/* <List>
-            <ListItem>
-              <ListItemText>
-                <div className="d-flex justify-content-around">
-                  <img src={engUk} style={{ width: "50px" }} alt="" />{" "}
-                  <img src={arKsa} style={{ width: "50px" }} alt="" />{" "}
-                </div>
-              </ListItemText>
-            </ListItem>
-            <ListItem>
-              <ListItemText>
-              <img src={arKsa} style={{ width: "25px" }} alt="" />{" "}
-                  <b>Arabic</b>
-              </ListItemText>
-            </ListItem>
-          </List> */}
-
           <Divider className="mt-2" />
+          <div className="d-flex justify-content-center mt-2 w-100 p-2 m-0">
+            <div className="ml-2 mr-2" style={{ cursor: "pointer" }}>
+              <a href="https://www.linkedin.com/in/sirajalislam/">
+                <img src={linkedInLogo} style={{ width: "25px" }} alt="" />
+              </a>{" "}
+            </div>
+            <div className="ml-2 mr-2" style={{ cursor: "pointer" }}>
+              <a href="https://twitter.com/SirajAlIslam">
+                <img src={twitterLogo} style={{ width: "25px" }} alt="" />
+              </a>
+            </div>
+          </div>
 
           {language === "en" ? (
             <>

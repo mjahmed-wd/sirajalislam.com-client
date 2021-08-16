@@ -1,7 +1,7 @@
 import React from "react";
 // import CenterCenter from "../../SharableComponents/CenterCenter/CenterCenter";
 import img from "../../../images/webp/section11.webp";
-import img2 from "../../../images/webp/section12.webp";
+import img2 from "../../../images/webp/newCompany.jpg";
 import { useLanguage } from "../../LanguageProvider/LanguageProvider";
 import DetailsComponentLeft from "../../SharableComponents/DetailsComponent/DetailsComponentLeft";
 import DetailsComponentRight from "../../SharableComponents/DetailsComponent/DetailsComponentRight";
@@ -12,7 +12,7 @@ const Section11 = () => {
   const title = `ONE 2 ONE LEGAL, LLP – RIYADH, SAUDI ARABIA`;
   const titleAr = `لشركة  ون تو ون للمحاماة ال ال بي- الرياض، المملكة العربية السعودية`;
   const year = `2013-2021`;
-  const yearAr = `2021 – حتى الوقت الحاضر`;
+  const yearAr = `2013-2021`;
   const designation = `Managing Partner`;
   const designationAr = `المدير الشريك`;
   const subtitle = `One 2 One Legal LLP, recognised as the best boutique law firm in Saudi Arabia provides “magic circle,” “white shoe” firm quality on a local market price dynamic specifically on client relationship demand. As Managing Partner, Siraj Al Islam has been awarded the best lawyer in Saudi Arabia.`;

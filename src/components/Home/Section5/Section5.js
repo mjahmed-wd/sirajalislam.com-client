@@ -23,7 +23,7 @@ const Section5 = () => {
           <p style={{ fontSize: "20px" }}>
             {language==="en"?`Division Head, Equity & Asset Management Legal Affairs`:`رئيس قسم الشؤون القانونيه لاداره الاسهم والاصول`}
           </p>
-          <p  style={{direction:"ltr"}}>{language==="en"?`Tel:`:`الهاتف:`} <b  style={{direction:"rtl"}}>{language==="en"?"+966595528968":`+٩٦٦٥٩٥٥٢٨٩٦٨`}</b></p>
+          <p  style={{direction:"ltr"}}>{language==="en"?`Tel:`:`الهاتف:`} <b  style={{direction:"rtl"}}>{language==="en"?"+966595528968":`966595528968`}</b></p>
           <p> me@sirajalislam.com</p>
           <p>{language==="en"?`Awarded best lawyer in Saudi Arabia`:`حائز على جائزة أفضل محام في المملكة العربية السعودية
 `}</p>

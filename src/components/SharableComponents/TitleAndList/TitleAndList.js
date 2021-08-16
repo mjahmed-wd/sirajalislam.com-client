@@ -9,10 +9,10 @@ const TitleAndList = ({ title, year, designation, subtitle, list }) => {
         <p className="mini-title oneOneRem m-2">{title}</p>
         <p className="oneOneRem m-2">{year}</p>
       </div>
-      <div className="oneOneRem mt-2 mb-2">
+      <div className="oneOneRem m-2">
         <b>{designation}</b>
       </div>
-      <div className="mt-3 mb-3">
+      <div className="mt-3 mb-3 ml-2">
         <p className="mini-subtitle oneOneRem text-justify">{subtitle}</p>
       </div>
       <ul>

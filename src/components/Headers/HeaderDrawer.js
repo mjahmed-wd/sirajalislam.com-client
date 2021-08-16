@@ -23,6 +23,7 @@ import engUk from "../../images/webp/engUkLanguage.png";
 import arKsa from "../../images/webp/arKsaLanguage.png";
 import linkedInLogo from "../../images/linkedIn.png";
 import twitterLogo from "../../images/twitter.png";
+import emailLogo from "../../images/email.png";
 import Ticker from "../Ticker/Ticker";
 // import { Link } from "@material-ui/core";
 
@@ -212,24 +213,31 @@ export default function HeaderDrawer({ children }) {
             paper: classes.drawerPaper,
           }}
         >
-          <div className={classes.drawerHeader}>
-            <IconButton onClick={handleDrawerClose}>
-              {theme.direction === "rtl" ? (
-                <ChevronLeftIcon />
-              ) : (
-                <ChevronRightIcon />
-              )}
-            </IconButton>
+          <div
+            className={classes.drawerHeader}
+            style={{ position: "relative" }}
+          >
+            <div style={{ position: "absolute", top: "15px", left: "0" }}>
+              <IconButton onClick={handleDrawerClose}>
+                {theme.direction === "rtl" ? (
+                  <ChevronLeftIcon />
+                ) : (
+                  <ChevronRightIcon />
+                )}
+              </IconButton>
+            </div>
 
             {/* navigation */}
-            <div className="d-flex justify-content-around w-100 pt-3">
+            <div className="d-flex justify-content-center w-100 pt-3">
               <div
+                className="ml-2 mr-2"
                 onClick={() => setLanguage("en")}
                 style={{ cursor: "pointer" }}
               >
                 <img src={engUk} style={{ width: "50px" }} alt="" />
               </div>
               <div
+                className="ml-2 mr-2"
                 onClick={() => setLanguage("ar")}
                 style={{ cursor: "pointer" }}
               >
@@ -237,9 +245,12 @@ export default function HeaderDrawer({ children }) {
               </div>
             </div>
           </div>
-
-          <Divider className="mt-2" />
-          <div className="d-flex justify-content-center mt-2 w-100 p-2 m-0">
+          <div className="d-flex justify-content-center w-100 mt-2 p-2 m-0">
+            <div className="ml-2 mr-2" style={{ cursor: "pointer" }}>
+              <a href="mailto:me@sirajalislam.com">
+                <img src={emailLogo} style={{ width: "25px" }} alt="" />
+              </a>{" "}
+            </div>
             <div className="ml-2 mr-2" style={{ cursor: "pointer" }}>
               <a href="https://www.linkedin.com/in/sirajalislam/">
                 <img src={linkedInLogo} style={{ width: "25px" }} alt="" />
@@ -251,6 +262,25 @@ export default function HeaderDrawer({ children }) {
               </a>
             </div>
           </div>
+          <Divider className="mt-2" />
+
+          {/* <div className="d-flex justify-content-center w-100 mt-2 p-2 m-0">
+            <div className="ml-2 mr-2" style={{ cursor: "pointer" }}>
+              <a href="mailto:me@sirajalislam.com">
+                <img src={emailLogo} style={{ width: "25px" }} alt="" />
+              </a>{" "}
+            </div>
+            <div className="ml-2 mr-2" style={{ cursor: "pointer" }}>
+              <a href="https://www.linkedin.com/in/sirajalislam/">
+                <img src={linkedInLogo} style={{ width: "25px" }} alt="" />
+              </a>{" "}
+            </div>
+            <div className="ml-2 mr-2" style={{ cursor: "pointer" }}>
+              <a href="https://twitter.com/SirajAlIslam">
+                <img src={twitterLogo} style={{ width: "25px" }} alt="" />
+              </a>
+            </div>
+          </div> */}
 
           {language === "en" ? (
             <>

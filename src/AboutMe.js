@@ -1,12 +1,12 @@
 import React, { Suspense } from "react";
 import { useLanguage } from "./components/LanguageProvider/LanguageProvider";
-import aboutMeEn from "./images/webp/circles/aboutMeEn.png"
-import aboutMeAr from "./images/webp/circles/aboutMeAr.png"
-import generalCounselEn from "./images/webp/circles/generalCounselEn.png"
-import generalCounselAr from "./images/webp/circles/generalCounselAr.png"
-import section3bg from "./images/webp/section3bg.webp"
-import section4bg from "./images/webp/section4bg.webp"
-import section9bg from "./images/webp/section9bg.webp"
+import aboutMeEn from "./images/webp/circles/aboutMeEn.png";
+import aboutMeAr from "./images/webp/circles/aboutMeAr.png";
+import generalCounselEn from "./images/webp/circles/generalCounselEn.png";
+import generalCounselAr from "./images/webp/circles/generalCounselAr.png";
+import section3bg from "./images/webp/section3bg.webp";
+import section4bg from "./images/webp/section4bg.webp";
+import section9bg from "./images/webp/section9bg.webp";
 // import MainCircle from './components/SharableComponents/MainCicle/MainCircle';
 
 const AboutMe = () => {
@@ -18,9 +18,6 @@ const AboutMe = () => {
   );
   const Section5 = React.lazy(() =>
     import("./components/Home/Section5/Section5")
-  );
-  const TimeLine = React.lazy(() =>
-    import("./components/Home/TimeLine/TimeLine")
   );
   const Section7 = React.lazy(() =>
     import("./components/Home/Section7/Section7")
@@ -39,20 +36,12 @@ const AboutMe = () => {
       {/* <Header /> */}
       {/* SECTION 2-9 */}
       <Suspense fallback={<div>Loading...</div>}>
-       <MainCircle img={language==="en"?aboutMeEn:aboutMeAr}/>
+        <MainCircle img={language === "en" ? aboutMeEn : aboutMeAr} />
       </Suspense>
-      {/* <Suspense fallback={<div>Loading...</div>}>
-        <MainCircle>
-          {language === "en" ? `ABOUT` : `عني`}
-          <br />
-          {language === "en" ? ` ME` : ``}
-        </MainCircle>
-      </Suspense> */}
-      {/* <Suspense fallback={<div>Loading...</div>}>
-            <TimeLine />
-          </Suspense> */}
+     
       <Suspense fallback={<div>Loading...</div>}>
-        <Review1 bgImg={section3bg}
+        <Review1
+          bgImg={section3bg}
           reviewTextEn={
             language === "en"
               ? ` I took over from Siraj but shadowed him for a few months before he
@@ -80,7 +69,7 @@ const AboutMe = () => {
         />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        <Review2 bgImg={section4bg}/>
+        <Review2 bgImg={section4bg} />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <Section5 />
@@ -89,23 +78,9 @@ const AboutMe = () => {
         <TextImg />
         </Suspense> */}
       <Suspense fallback={<div>Loading...</div>}>
-        <MainCircle img={language==="en"?generalCounselEn:generalCounselAr}/>
-        {/* <MainCircle>
-          {language === "en" ? (
-            <>
-              GENERAL <br /> COUNSEL <br /> / PARTNER
-            </>
-          ) : (
-            <>
-              رئيس
-              <br />
-              <br />
-              الشؤون القانونية
-              <br />
-              وشريك
-            </>
-          )}
-        </MainCircle> */}
+        <MainCircle
+          img={language === "en" ? generalCounselEn : generalCounselAr}
+        />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <Section7 />
@@ -114,7 +89,8 @@ const AboutMe = () => {
         <Section8 />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        <Review1 bgImg={section9bg}
+        <Review1
+          bgImg={section9bg}
           reviewTextEn={
             language === "en"
               ? `I have been involved in several transactions where Siraj was advising the other side, and each time I have welcomed his courtesy and professionalism and his willingness to give due consideration to any comments and propose practical solutions for ensuring that the transaction proceeded smoothly to a successful conclusion.

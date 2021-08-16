@@ -54,6 +54,9 @@ ul{
   transition: box-shadow 3000ms cubic-bezier(1, 1, 1, 1) 300ms!important;
   background-color: #fff;
 }
+.MuiSvgIcon-fontSizeLarge {
+    font-size: 3.1875rem!important;
+}
 .carousel-item {
 
   transition: transform 2s ease-in-out;
@@ -75,6 +78,28 @@ display: none!important;
   z-index: 10;
   top: 50px;
 }
+.mail{
+    position:fixed;
+    bottom:15px;
+    right:15px;
+    height:65px;
+    width:65px;
+    color:#3D3D3D;
+    background-color:white;
+    border:2px solid #3D3D3D;
+    border-radius:50%;
+    text-align:center;
+    line-height:65px;
+    z-index:5;
+    transition: all 0.5s ease-in-out;
+}
+.mail:hover{
+color: white;
+background-color: #3D3D3D;
+transition: all 0.5s ease-in-out;
+}
+
+
 /* from timeline */
 .timeline-bg{
   /* background-image: url("../../../images/webp/image3.webp")!important; */

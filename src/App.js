@@ -12,6 +12,7 @@ import "./responsive.css";
 import "./App.css";
 import LanguageProvider from "./components/LanguageProvider/LanguageProvider";
 import HeaderDrawer from "./components/Headers/HeaderDrawer";
+import Mail from "./components/Mail/Mail";
 // import NavigateToTop from "./components/NavigateToTop/NavigateToTop";
 // import Section1 from "./components/Home/Section1/Section1";
 function App() {
@@ -64,6 +65,7 @@ function App() {
       <Suspense fallback={<div style={{ height: "110vh" }}>Loading...</div>}>
         <ClientRecommendation />
       </Suspense>
+      <Mail/>
     </LanguageProvider>
   );
 }
